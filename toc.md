@@ -2,6 +2,7 @@
     - [Overview](overview.md)
 - Prologue
     - [Release Notes](releases.md)
+    - [Upgrade Guide](upgrade.md)
 - Getting Started
     - [Installation](installation.md)
     - [Virtual host](virtualhost.md)
@@ -24,3 +25,4 @@
     - [Shortcode](shortcode.md)
     - [Meta box](meta_box.md)
     - [Mail](mail.md)
+    - [FAQ](faq.md)
