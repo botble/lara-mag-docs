@@ -1,7 +1,20 @@
 # Release Notes
 
+- [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_2_0"></a>
+## LaraMag 2.0
+### 04-04-2018
+
+- Upgrade to Laravel 5.6
+- Add Passport support
+- Refactor plugin system
+- Refactor ACL system
+- Fix bug member login and forgot password.
+- Update UI
+- Update some vendor packages
 
 ### 21-02-2018
 

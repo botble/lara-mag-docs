@@ -24,6 +24,14 @@ Then go to /admin/widgets, you will see your widget.
 
 > {note} You can follow other widgets in default themes: Ripple and NewsTV to create widget.
 
+3/ To remove a widget, using below command:
+    
+```php
+php artisan widget:remove <widget name>
+```
+    
+This widget will be removed.
+
 <a name="structure"></a>
 ## Structure
 
