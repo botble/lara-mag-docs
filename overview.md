@@ -11,7 +11,7 @@ LaraMag is a magazine system using Laravel 5.6
 
 Created: `17/12/2017`
 
-Current version: `2.0`
+Current version: `2.0.1`
 
 By: [Botble Technologies](https://botble.com)
 
