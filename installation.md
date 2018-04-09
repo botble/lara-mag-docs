@@ -24,7 +24,7 @@
 - PHP_CURL Module Enable
 
 
->  {warning} On this project, I use the latest Laravel version (currently 5.5). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
+>  {warning} On this project, I use the latest Laravel version (currently 5.6). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
 
 <a name="installation"></a>
 ## Installation
@@ -35,7 +35,7 @@
 
 ** - Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of LaraMag. **
 
-**- LaraMag should run on a virtual host. Create a virtual host like lara-mag.local to run LaraMag. Follow these steps to see how to config virtual host: [Setup virtual host](/2.0/virtualhost).** 
+**- LaraMag should run on a virtual host. Create a virtual host like lara-mag.local to run LaraMag. Follow these steps to see how to config virtual host: [Setup virtual host](/2.0.1/virtualhost).** 
 
 <a name="note"></a>
 ## Note
@@ -50,7 +50,7 @@ Please remove `public` in your domain also, you can point your domain to `public
 
 or use `.httaccess` (http://stackoverflow.com/questions/23837933/how-can-i-remove-public-index-php-in-the-url-generated-laravel)
 
-Follow these steps to see how to config virtual host: [Setup virtual host](/2.0/virtualhost).
+Follow these steps to see how to config virtual host: [Setup virtual host](/2.0.1/virtualhost).
 
 Well done! Now, you can login to the dashboard by access to your_domain_site/admin.
 
