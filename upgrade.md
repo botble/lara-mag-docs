@@ -9,7 +9,7 @@
 
 - Override folder /core and /plugins
 - Run "php artisan vendor:publish --tag=public --force" to update assets.
-- Run "composer install" to update database.
+- Run "php artisan migrate" to update database.
 
 <a name="upgrade-2.0"></a>
 ## Upgrade from 1.1 to 2.0
