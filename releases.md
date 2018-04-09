@@ -1,8 +1,19 @@
 # Release Notes
 
+- [LaraMag 2.0.1](#version_2_0_1)
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_3_0_1"></a>
+## LaraMag 2.0.1
+### 09-04-2018
+
+- Fix bug cropping image size.
+- Fix preview image in media management
+- Move API clients to settings.
+- Update UI for member frontend.
+- Update UI in admin panel.
 
 <a name="version_2_0"></a>
 ## LaraMag 2.0
