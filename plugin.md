@@ -34,7 +34,7 @@ php artisan plugin:deactivate <plugin name>
 **- Command:**
 
 ```bash
-php artisan cms:remove demo
+php artisan plugin:remove demo
 ```
 
 > {info} `demo` is a plugin
