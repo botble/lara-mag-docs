@@ -1,11 +1,23 @@
 # Release Notes
 
+- [LaraMag 2.1](#version_2_1)
 - [LaraMag 2.0.1](#version_2_0_1)
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
 
-<a name="version_3_0_1"></a>
+<a name="version_2_1"></a>
+## LaraMag 2.1
+### 15-05-2018
+
+- Support multi-language for theme options & widgets
+- Fix bug add super users
+- Upgrade table system & add filter tables
+- Support change language on the login page
+- Fix bug adding admin locale
+- Fix bug create plugin by command
+
+<a name="version_2_0_1"></a>
 ## LaraMag 2.0.1
 ### 09-04-2018
 
