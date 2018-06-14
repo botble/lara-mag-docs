@@ -1,9 +1,19 @@
 # Upgrade Guide
 
+- [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrade To 2.1](#upgrade-2.1)
 - [Upgrade To 2.0.1](#upgrade-2.0.1)
 - [Upgrade To 2.0](#upgrade-2.0)
 - [Upgrading To 1.1](#upgrade-1.1)
+
+<a name="upgrade-2.2"></a>
+## Upgrade from 2.1 to 2.2
+
+- Override folder /core & /plugins with new source code.
+- Run `php artisan vendor:publish --tag=public --force`
+- Run `php artisan vendor:publish --tag=lang --force`
+- Run `composer install` to update vendor packages.
+- Run `php artisan migrate` to update database.
 
 <a name="upgrade-2.1"></a>
 ## Upgrade from 2.0.1 to 2.1

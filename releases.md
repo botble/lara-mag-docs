@@ -1,10 +1,19 @@
 # Release Notes
 
+- [LaraMag 2.2](#version_2_2)
 - [LaraMag 2.1](#version_2_1)
 - [LaraMag 2.0.1](#version_2_0_1)
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_2_2"></a>
+## LaraMag 2.2
+### 14-06-2018
+- Fix bug UI & update admin UI
+- Add Chinese language
+- Refactor code & optimize queries
+- Update vendor packages
 
 <a name="version_2_1"></a>
 ## LaraMag 2.1
