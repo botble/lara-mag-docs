@@ -1,11 +1,18 @@
 # Release Notes
 
+- [LaraMag 2.2.1](#version_2_2_1)
 - [LaraMag 2.2](#version_2_2)
 - [LaraMag 2.1](#version_2_1)
 - [LaraMag 2.0.1](#version_2_0_1)
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_2_2_1"></a>
+## LaraMag 2.2.1
+### 22-06-2018
+
+- Hotfix bulk actions and language column
 
 <a name="version_2_2"></a>
 ## LaraMag 2.2
