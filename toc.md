@@ -14,6 +14,7 @@
 - Theme development
     - [Overview](theme.md)
     - [Assets](theme-assets.md)
+    - [Menu](menu.md)
     - [Breadcrumb](theme-breadcrumb.md)
     - [Widget](theme-widget.md)
     - [MVC Pattern](theme-mvc-pattern.md)
