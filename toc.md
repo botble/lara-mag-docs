@@ -1,5 +1,6 @@
 - 
     - [Overview](overview.md)
+    - [Screenshots](screenshots.md)
 - Prologue
     - [Release Notes](releases.md)
     - [Upgrade Guide](upgrade.md)
@@ -19,11 +20,19 @@
     - [Widget](theme-widget.md)
     - [MVC Pattern](theme-mvc-pattern.md)
     - [Theme options](theme-options.md)
+    - [Layouts](theme-layout.md)
     
 - Core
+    - [Roles & permissions](role_permission.md)
     - [Filters](filters.md)
     - [Actions](actions.md)
     - [Shortcode](shortcode.md)
     - [Meta box](meta_box.md)
+    - [Custom fields](custom-field.md)
+    - [Dashboard](dashboard.md)
     - [Mail](mail.md)
     - [FAQ](faq.md)
+    
+- Available plugins
+    - [Gallery](plugin-gallery.md)
+    - [Language](plugin-language.md)

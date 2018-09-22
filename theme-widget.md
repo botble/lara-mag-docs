@@ -12,19 +12,12 @@ php artisan widget:create <widget name>
 ```
     
 This widget will be created in `/public/themes/<current active theme>/widgets/<widget name>`.
-
-2/ Include widget to your theme. Add bellow code to the file `/public/themes/<current active theme>/functions/functions.php`
-
-```php
-require_once __DIR__ . '/../widgets/<widget name>/<widget name>.php';
-register_widget(<Widget Name>Widget::class); // Widget class name
-```
     
 Then go to /admin/widgets, you will see your widget.
 
 > {note} You can follow other widgets in default themes: Ripple and NewsTV to create widget.
 
-3/ To remove a widget, using below command:
+2/ To remove a widget, using below command:
     
 ```php
 php artisan widget:remove <widget name>
