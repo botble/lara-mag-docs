@@ -5,6 +5,8 @@
 - [Deactivate plugin](#deactivate-plugin)
 - [Remove plugin](#remove-plugin)
 
+> {info}From version 2.1, command name is changed from `cms:create` to `plugin:create`. Please run `php artisan --help` to see all commands
+
 <a name="create-plugin"></a>
 ## Create a plugin
 **- Open CMD or Terminal then run:**
