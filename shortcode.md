@@ -84,4 +84,4 @@ Example:
 echo generate_shortcode('my-block', ['foo' => 'bar', 'abc' => 'xyz']);
 ```
 
-> {note} If there are no shortcode tags defined, then the content will be returned without any filtering. This might cause issues when plugins are disabled but the shortcode will still show up in the post or content.
+> {warning} If there are no shortcode tags defined, then the content will be returned without any filtering. This might cause issues when plugins are disabled but the shortcode will still show up in the post or content.
