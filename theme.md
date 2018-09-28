@@ -15,14 +15,14 @@
 The first time you have to create theme "default" structure, using the artisan command:
 
 ```bash
-php artisan theme:create default
+php artisan cms:theme:create default
 ```
 
 
 To delete an existing theme, use the command:
 
 ```bash
-php artisan theme:remove default
+php artisan cms:theme:remove default
 ```
 
 <a name="configuration"></a>
@@ -37,7 +37,7 @@ The config is convenient for setting up basic CSS/JS, partial composer, breadcru
 Example:
 
 ```php
-'events' => array(
+'events' => [
     
     // Before event inherit from package config and the theme that call before,
     // you can use this event to set meta, breadcrumb template or anything
@@ -75,7 +75,7 @@ Example:
         }
     
     )
-)
+]
 ```
     
 <a name="basic-usage"></a>
