@@ -5,13 +5,13 @@
 - [Deactivate plugin](#deactivate-plugin)
 - [Remove plugin](#remove-plugin)
 
-> {info}From version 2.1, command name is changed from `cms:create` to `plugin:create`. Please run `php artisan --help` to see all commands
+> {info}From version 3.2, command name is changed from `plugin:create` to `cms:plugin:create`. Please run `php artisan --help` to see all commands
 
 <a name="create-plugin"></a>
 ## Create a plugin
 **- Open CMD or Terminal then run:**
 
-     php artisan plugin:create <plugin name>
+     php artisan cms:plugin:create <plugin name>
 
 > {info} You can see more detail here: https://www.youtube.com/watch?v=8F4wfrS9svs
 
@@ -20,7 +20,7 @@
 **- Open CMD or Terminal then run:**
 
 ```bash
-php artisan plugin:activate <plugin name>
+php artisan cms:plugin:activate <plugin name>
 ```
 
 <a name="deactivate-plugin"></a>
@@ -28,7 +28,7 @@ php artisan plugin:activate <plugin name>
 **- Open CMD or Terminal then run:**
 
 ```bash
-php artisan plugin:deactivate <plugin name>
+php artisan cms:plugin:deactivate <plugin name>
 ```
      
 <a name="remove-plugin"></a>
@@ -36,7 +36,7 @@ php artisan plugin:deactivate <plugin name>
 **- Command:**
 
 ```bash
-php artisan plugin:remove demo
+php artisan cms:plugin:remove demo
 ```
 
 > {info} `demo` is a plugin

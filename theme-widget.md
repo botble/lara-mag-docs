@@ -8,19 +8,19 @@
 1/ To create a widget, using below command:
     
 ```php
-php artisan widget:create <widget name>
+php artisan cms:widget:create <widget name>
 ```
     
 This widget will be created in `/public/themes/<current active theme>/widgets/<widget name>`.
     
-Then go to /admin/widgets, you will see your widget.
+Then go to `/admin/widgets`, you will see your widget.
 
 > {note} You can follow other widgets in default themes: Ripple and NewsTV to create widget.
 
 2/ To remove a widget, using below command:
     
 ```php
-php artisan widget:remove <widget name>
+php artisan cms:widget:remove <widget name>
 ```
     
 This widget will be removed.
