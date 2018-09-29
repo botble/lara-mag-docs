@@ -29,6 +29,8 @@
 <a name="installation"></a>
 ## Installation
 
+**- Run `composer install` to download vendor packages **
+
 **- Import sample database from `database.sql`**
 
 **- Create `.env` file from `.env-example` and update your configuration**
