@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 3.3](#version_3_3)
 - [LaraMag 2.2.1](#version_2_2_1)
 - [LaraMag 2.2](#version_2_2)
 - [LaraMag 2.1](#version_2_1)
@@ -7,6 +8,11 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_3_3"></a>
+## LaraMag 3.3
+### 30-09-2018
+- See what's new here: https://botble.com/whats-new-in-botble-cms-33
 
 <a name="version_2_2_1"></a>
 ## LaraMag 2.2.1

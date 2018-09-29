@@ -1,11 +1,18 @@
 # Upgrade Guide
 
+- [Upgrade To 3.3](#upgrade-3.3)
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrade To 2.1](#upgrade-2.1)
 - [Upgrade To 2.0.1](#upgrade-2.0.1)
 - [Upgrade To 2.0](#upgrade-2.0)
 - [Upgrading To 1.1](#upgrade-1.1)
+
+<a name="upgrade-3-3"></a>
+## Upgrade to 3.3
+
+- This is big version. It has many change on core system so the easiest way to upgrade to new version is copy what your changes 
+(your themes, plugins, translations) to new source code.
 
 <a name="upgrade-2.2.1"></a>
 ## Upgrade from 2.2 to 2.2.1
