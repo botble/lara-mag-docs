@@ -30,6 +30,8 @@
     - [Meta box](meta_box.md)
     - [Custom fields](custom-field.md)
     - [Dashboard](dashboard.md)
+    - [Form builder](form-builder.md)
+    - [Slug field](slug-field.md)
     - [Mail](mail.md)
     - [FAQ](faq.md)
     
