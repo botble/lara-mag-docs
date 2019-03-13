@@ -7,30 +7,19 @@
 
 Botble is using some packages.
 
-** 1. cartalyst/sentinel**
+**1. yajra/laravel-datatables-oracle**
 
-Sentinel is a PHP 5.4+ fully-featured authentication & authorization system. It also provides additional features such as user roles and additional security features.
+**2. venturecraft/revisionable**
 
-Sentinel is a framework agnostic set of interfaces with default implementations, though you can substitute any implementations you see fit.
+**3. intervention/image**
 
-This package likes Laravel Auth but it has more features than Auth.
-You can see more detail here: https://cartalyst.com/manual/sentinel/2.0 or https://github.com/cartalyst/sentinel
+**4. roumen/sitemap**
 
-**2. yajra/laravel-datatables-oracle**
+**5. davejamesmiller/laravel-breadcrumbs**
 
-**3. venturecraft/revisionable**
+**6. laravel/socialite**
 
-**4. baum/baum**
-
-**5. intervention/image**
-
-**6. roumen/sitemap**
-
-**7. davejamesmiller/laravel-breadcrumbs**
-
-**8. laravel/socialite**
-
-**9. laravelcollective/html**
+**7. laravelcollective/html**
 
 <a name="customized_package"></a>
 ## Customized packages
