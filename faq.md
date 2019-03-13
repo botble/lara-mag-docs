@@ -3,7 +3,7 @@
 - Open `/plugins/<your-plugin>/src/Providers/<YourPlugin>ServiceProvider.php`. Add below code to function `boot`
 
 ```php
-\Event::listen(SessionStarted::class, function () {
+\Event::listen(\Illuminate\Routing\Events\RouteMatched::class, function () {
     dashboard_menu()->registerItem([
         'id' => 'cms-plugins-<your-plugin>', // key of menu, it should unique
         'priority' => 5,
