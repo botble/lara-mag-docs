@@ -21,6 +21,21 @@
 - Move some plugins to packages. Now we have a new folder is /platform/packages (it is the place for required plugins).
 - Theme's directory is now located in /platform/themes/your-theme so it can't access directly anymore. After make change on theme's assets, you will need to run command `php artisan cms:theme:assets:publish your-theme` to copy assets to /public/themes/your-themes.
 
+- Made some change on `assets` module.
+    + Refactor some methods.
+        + `addJavascript` => `addScripts`
+        + `removeJavascript` => `removeScripts`
+        + `getJavascript` => `getScripts`
+        + `addStylesheets` => `addStyles`
+        + `removeStylesheets` => `removeStyles`
+        + `getStylesheets` => `getStyles`
+        + `addStylesheetsDirectly` => `addStylesDirectly`
+        + `addJavascriptDirectly` => `addScriptsDirectly`
+
+    + Change some config keys:
+        + `javascript` => `scripts`
+        + `stylesheets` => `styles`
+
 <a name="version_3_3_1"></a>
 ## Botble 3.3.1
 ### 18-10-2018
