@@ -35,6 +35,8 @@
     + Change some config keys:
         + `javascript` => `scripts`
         + `stylesheets` => `styles`
+        
+- Change folder to upload to `storage/uploads`, you need to run command `php artisan storage:link` to create symlink.
 
 <a name="version_3_3_1"></a>
 ## Botble 3.3.1
