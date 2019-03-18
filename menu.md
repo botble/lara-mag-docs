@@ -1,20 +1,43 @@
 # Theme
 
-## Adding menu to theme
+## Default menu locations
+
+`platform/packages/menu/config/general.php`
+```php
+'locations' => [
+    'header-menu' => 'Header Navigation',
+    'main-menu'   => 'Main Navigation',
+    'footer-menu' => 'Footer Navigation',
+],
+```
+
+
+## Render menu by location
 
 ```php
     {!!
-        Menu::generateMenu([
-            'slug' => 'menu-slug-key',
+        Menu::renderMenuLocation('main-menu', [ // 
             'options' => [],
-            'theme' => true,
+            'theme'   => true,
         ])
     !!}
 ```
 
-`menu-slug-key` is slug of the menu which you want to show.
+`main-menu` is the menu location key
 
 'options' is attributes of `ul` tag. Ex: `'options' => ['id' => 'menu-header-main-menu', 'class' => 'menu']`
+
+## Add new menu location
+
+```php
+   Menu:addMenuLocation('menu-location-key', 'Description here');
+```
+
+## Remove a menu location
+
+```php
+   Menu:removeMenuLocation('menu-location-key');
+```
 
 ## Customize menu views
 
@@ -45,8 +68,7 @@ And to show menu with custom view, using below code:
 
 ```php
 {!!
-    Menu::generateMenu([
-        'slug' => 'menu-slug-key',
+    Menu::renderMenuLocation('main-menu', [
         'options' => [],
         'theme' => true,
         'view' => 'custom-menu',
@@ -54,4 +76,4 @@ And to show menu with custom view, using below code:
 !!}
 ```
 
-Menu with slug is 'menu-slug-key' will be generated using custom view in `/public/themes/your-theme/partials/custom-menu.blade.php`
+Menu in the location 'main-menu' will be generated using custom view in `/public/themes/your-theme/partials/custom-menu.blade.php`
