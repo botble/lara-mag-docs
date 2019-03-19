@@ -155,7 +155,7 @@ for theme option with HTML content.
     'id' => 'field_name',
     'section_id' => 'opt-text-subsection-section-id',
     'type' => 'onOff',
-    label' => __('Field label'),
+    'label' => __('Field label'),
     'attributes' => [
         'name' => 'field_name',
         'value' => 1,
@@ -175,8 +175,8 @@ for theme option with HTML content.
 ->setField([
     'id' => 'field_name',
     'section_id' => 'opt-text-subsection-section-id',
-    'type' => 'onOff',
-    label' => __('Field label'),
+    'type' => 'customRadio',
+    'label' => __('Field label'),
     'attributes' => [
         'name' => 'field_name',
         'values' => [
@@ -196,8 +196,8 @@ for theme option with HTML content.
 ->setField([
     'id' => 'field_name',
     'section_id' => 'opt-text-subsection-section-id',
-    'type' => 'onOff',
-    label' => __('Field label'),
+    'type' => 'customSelect',
+    'label' => __('Field label'),
     'attributes' => [
         'values' => [
             ['field_name[]', 1, 'Option 1'],
