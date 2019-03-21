@@ -38,6 +38,26 @@
         
 - Change folder to upload to `storage/uploads`, you need to run command `php artisan storage:link` to create symlink.
 
+- Change event to listen when adding admin menu.
+
+Change `\Botble\Base\Events\SessionStarted::class` to `\Illuminate\Routing\Events\RouteMatched::class`
+
+Example:
+
+```php
+\Event::listen(\Illuminate\Routing\Events\RouteMatched::class, function () {
+    dashboard_menu()->registerItem([
+        'id' => 'cms-plugins-<your-plugin>', // key of menu, it should unique
+        'priority' => 5,
+        'parent_id' => null,
+        'name' => __('Your plugin name'), // menu name, if you don't need translation, you can use the name in plain text
+        'icon' => 'fa fa-camera',
+        'url' => route('<plugins>.list'), // route to your plugin list.
+        'permissions' => ['<plugins>.list'], // permission should same with route name, you can see that flag in Plugin.php
+    ]);
+});
+```
+
 <a name="version_3_3_1"></a>
 ## Botble 3.3.1
 ### 18-10-2018
