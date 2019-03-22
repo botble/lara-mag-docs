@@ -35,6 +35,9 @@
 
 **- Create `.env` file from `.env-example` and update your configuration**
 
+**- Run `php artisan vendor:publish --tag=public --force`**
+**- Run `php artisan storage:link` **
+
 ** - Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of LaraMag. **
 
 **- LaraMag should run on a virtual host. Create a virtual host like lara-mag.local to run LaraMag. Follow these steps to see how to config virtual host: [Setup virtual host](/2.0.1/virtualhost).** 
