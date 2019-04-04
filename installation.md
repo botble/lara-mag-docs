@@ -24,23 +24,26 @@
 - PHP_CURL Module Enable
 
 
->  {warning} On this project, I use the latest Laravel version (currently 5.6). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
+>  {warning} On this project, I use the latest Laravel version (currently 5.8). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
 
 <a name="installation"></a>
 ## Installation
 
-**- Run `composer install` to download vendor packages **
+**- Run `composer install` to download vendor packages**
 
 **- Import sample database from `database.sql`**
 
 **- Create `.env` file from `.env-example` and update your configuration**
 
 **- Run `php artisan vendor:publish --tag=public --force`**
-**- Run `php artisan storage:link` **
 
-** - Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of LaraMag. **
+**- Run `php artisan cms:theme:assets:publish lara-mag`**
 
-**- LaraMag should run on a virtual host. Create a virtual host like lara-mag.local to run LaraMag. Follow these steps to see how to config virtual host: [Setup virtual host](/2.0.1/virtualhost).** 
+**- Run `php artisan storage:link`**
+
+** - Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS. **
+
+**- LaraMag should run on a virtual host. Create a virtual host like cms.local to run LaraMag. Follow these steps to see how to config virtual host: [Setup virtual host](/lara-mag/3.4/virtualhost).** 
 
 <a name="note"></a>
 ## Note
