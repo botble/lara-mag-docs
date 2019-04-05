@@ -8,7 +8,7 @@
         'id' => 'cms-plugins-<your-plugin>', // key of menu, it should unique
         'priority' => 5,
         'parent_id' => null,
-        'name' => __('Your plugin name'), // menu name, if you don't need translation, you can use the name in plain text
+        'name' => 'Your plugin name', // It should be a translation key. Ex: plugins/test::test.name
         'icon' => 'fa fa-camera',
         'url' => route('<plugins>.list'), // route to your plugin list.
         'permissions' => ['<plugins>.list'], // permission should same with route name, you can see that flag in Plugin.php
