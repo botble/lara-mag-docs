@@ -7,18 +7,18 @@
 <a name="introduction"></a>
 ## Introduction
 
-LaraMag is a magazine system using Laravel 5.6
+LaraMag is a magazine system using Laravel 5.8
 
 Created: `17/12/2017`
 
-Current version: `2.0.1`
+Current version: `3.4`
 
 By: [Botble Technologies](https://botble.com)
 
 Email: [sangnguyenplus@gmail.com](mailto:sangnguyenplus@gmail.com)
 
 Thank you for purchasing this product. If you have any questions that are beyond the scope of this help file, 
-please feel free to email via my user page contact form [here](http://themeforest.net/user/botble) or via skype *live:minhsang2603* for quickly support. Thank you so much!
+please feel free to email via my user page contact form [here](https://codecanyon.net.net/user/botble) for quickly support. Thank you so much!
 		
 <a name="demo"></a>
 ## Demo

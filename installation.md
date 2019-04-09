@@ -29,21 +29,26 @@
 <a name="installation"></a>
 ## Installation
 
-**- Run `composer install` to download vendor packages**
+* Run `composer install` to download vendor packages
 
-**- Import sample database from `database.sql`**
+* Create `.env` file from `.env-example` and update your configuration
 
-**- Create `.env` file from `.env-example` and update your configuration**
+* Run `php artisan migrate` to create database structure
 
-**- Run `php artisan vendor:publish --tag=public --force`**
+* Run `php artisan cms:user:create` to create admin user
 
-**- Run `php artisan cms:theme:assets:publish lara-mag`**
+* Run `php artisan vendor:publish --tag=public --force`
 
-**- Run `php artisan storage:link`**
+* Run `php artisan cms:theme:assets:publish ripple`
 
-** - Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS. **
+* Run `php artisan storage:link`
 
-**- LaraMag should run on a virtual host. Create a virtual host like cms.local to run LaraMag. Follow these steps to see how to config virtual host: [Setup virtual host](/lara-mag/3.4/virtualhost).** 
+* Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS
+
+
+**If you need sample data, you can import it from `database.sql`**
+
+**LaraMag should run on a virtual host. Create a virtual host like cms.local to run LaraMag. Follow these steps to see how to config virtual host: [Setup virtual host](/lara-mag/3.4/virtualhost).** 
 
 <a name="note"></a>
 ## Note
