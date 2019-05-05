@@ -39,7 +39,7 @@
 
 * Run `php artisan vendor:publish --tag=public --force`
 
-* Run `php artisan cms:theme:assets:publish ripple`
+* Run `php artisan cms:theme:assets:publish lara-mag`
 
 * Run `php artisan storage:link`
 
