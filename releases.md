@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 3.5](#version_3_5)
 - [LaraMag 3.4](#version_3_4)
 - [LaraMag 3.3.1](#version_3_3_1)
 - [LaraMag 3.3](#version_3_3)
@@ -10,6 +11,20 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_3_4"></a>
+## LaraMag 3.4
+### 30-05-2019
+- Restructure asset files.
+- Fix security issue in upload user's avatar.
+- Change default value for `status` column to `published` instead of `publish`.
+- Create `dev-tool` package.
+- Change binding type for repositories from `singleton` to `bind`.
+- Remove `@author` in comment docs.
+- Fix language issue.
+- Fix dashboard widgets.
+- Allow to create user without role.
+- Refactor, clean migrations.
 
 <a name="version_3_4"></a>
 ## LaraMag 3.4
