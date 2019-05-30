@@ -37,7 +37,7 @@
 
 * Run `php artisan cms:user:create` to create admin user
 
-* Run `php artisan vendor:publish --tag=public --force`
+* Run `php artisan vendor:publish --tag=cms-public --force`
 
 * Run `php artisan cms:theme:assets:publish lara-mag`
 
@@ -48,7 +48,7 @@
 
 **If you need sample data, you can import it from `database.sql`**
 
-**LaraMag should run on a virtual host. Create a virtual host like cms.local to run LaraMag. Follow these steps to see how to config virtual host: [Setup virtual host](/lara-mag/3.4/virtualhost).** 
+**LaraMag should run on a virtual host. Create a virtual host like cms.local to run LaraMag. Follow these steps to see how to config virtual host: [Setup virtual host](/lara-mag/3.5/virtualhost).** 
 
 <a name="note"></a>
 ## Note
@@ -63,7 +63,7 @@ Please remove `public` in your domain also, you can point your domain to `public
 
 or use `.httaccess` (http://stackoverflow.com/questions/23837933/how-can-i-remove-public-index-php-in-the-url-generated-laravel)
 
-Follow these steps to see how to config virtual host: [Setup virtual host](/2.0.1/virtualhost).
+Follow these steps to see how to config virtual host: [Setup virtual host](/3.5/virtualhost).
 
 Well done! Now, you can login to the dashboard by access to your_domain_site/admin.
 
