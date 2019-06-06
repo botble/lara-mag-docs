@@ -7,8 +7,8 @@ The table to use `slug` must be have column `name`. It's used to generate slug c
 \- Open `/plugins/<your-plugin>/src/Providers/<YourPlugin>ServiceProvider.php`. Add below code to function `boot`
 
 ```php
-config(['core.slug.general.supported' => array_merge(config('core.slug.general.supported'), [<PLUGIN>_MODULE_SCREEN_NAME])]);
-config(['core.slug.general.prefixes.' . <PLUGIN>_MODULE_SCREEN_NAME => 'your-prefix']);
+config(['packages.slug.general.supported' => array_merge(config('packages.slug.general.supported'), [<PLUGIN>_MODULE_SCREEN_NAME])]);
+config(['packages.slug.general.prefixes.' . <PLUGIN>_MODULE_SCREEN_NAME => 'your-prefix']);
 // "your-prefix" is prefix for your slug field. URL will be http://domain.local/your-prefix/slug-here
 ```
 
