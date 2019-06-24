@@ -1,6 +1,9 @@
 # Release Notes
 
-- [Botble 3.5](#version_3_5)
+# Release Notes
+
+- [LaraMag 3.5.1](#version_3_5_1)
+- [LaraMag 3.5](#version_3_5)
 - [LaraMag 3.4](#version_3_4)
 - [LaraMag 3.3.1](#version_3_3_1)
 - [LaraMag 3.3](#version_3_3)
@@ -11,6 +14,19 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_3_5_1"></a>
+## Botble 3.5.1
+### 25-06-2019
+
+- Hotfix delete language.
+
+Add this line into `platform/plugins/language/resources/views/index.blade.php:191`
+```
+@include('core/table::modal')
+```
+
+http://prntscr.com/o66h4x
 
 <a name="version_3_5"></a>
 ## LaraMag 3.5
