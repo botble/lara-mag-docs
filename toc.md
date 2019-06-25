@@ -24,6 +24,7 @@
     
 - Core
     - [Roles & permissions](role_permission.md)
+    - [Media](media.md)
     - [Filters](filters.md)
     - [Actions](actions.md)
     - [Shortcode](shortcode.md)
