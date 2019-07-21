@@ -20,7 +20,7 @@
 - Run `php artisan migrate` to update database.
 - Replace all `public.index` to `public.single`.
 - Remove folder `public/vendor/core` and run command `php artisan vendor:publish --tag=cms-public --force`
-- Change method of delete pages, posts, categories... to `DELETE` (http://prntscr.com/ohvrw0), you need to change in your plugin /routes/web.php
+- We've changed method of "delete" button from `GET` to `DELETE` (http://prntscr.com/ohvrw0) so if you have custom plugins, you need to change all of it to `DELETE` in your plugin /routes/web.php
 
 ```php
 Route::get('delete/{id}', ...
@@ -32,6 +32,17 @@ To
 Route::delete('delete/{id}', ...
 ```
 
+And,
+
+```php
+Route::post('delete-many', ...
+```
+
+To
+
+```php
+Route::delete('delete-many', ...
+```
 
 <a name="upgrade-3.5"></a>
 ## Upgrade to 3.5
