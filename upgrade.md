@@ -16,9 +16,21 @@
 ## Upgrade to 3.6
 - Override folder `platform` from the update source code.
 - Remove folder `public/vendor/core` and run command `php artisan vendor:publish --tag=cms-public --force`
-- Run `composer install` to update vendor packages.
+- Update your  composer.json   with the latest  composer.json   or update changes from latest version http://prntscr.com/ohvwfw.
+- Run `composer update` to update vendor packages.
 - Run `php artisan migrate` to update database.
-- Change method of delete pages, posts, categories... to `DELETE` (http://prntscr.com/ogug1p), you need to change in your plugin /routes/web.php
+- Replace all `public.index` to `public.single`.
+- Change method of delete pages, posts, categories... to `DELETE` (http://prntscr.com/ohvrw0), you need to change in your plugin /routes/web.php
+
+```php
+Route::get('delete/{id}', ...
+```
+
+To 
+
+```php
+Route::delete('delete/{id}', ...
+```
 
 
 <a name="upgrade-3.5"></a>
