@@ -22,6 +22,7 @@
 
 - Fix bug repeater field with image, file in custom fields plugin.
 - Move plugin management into /packages. Now it's a optional feature, you can remove `botble/plugin-management` and run composer update to remove plugin feature.
+- Update `composer.json`. Add package `wikimedia/composer-merge-plugin`.
 - Add command to regenerate image sizes: `php artisan cms:media:thumnail:generate`.
 - Add default theme options: site title, SEO meta tags.
 - Add search box on tables.
