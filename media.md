@@ -41,3 +41,31 @@ How to use:
     {{ get_image_url($post->image, 'post-small') }}
     {{ get_object_image($post->image, 'post-small') }}
 ```
+
+# Custom upload
+
+You can create your custom upload with `RvMedia` facade.
+
+Ex:
+
+```
+\RvMedia::handleUpload(request()->input('file'), 0, 'your-folder`);
+```
+
+Or
+
+```
+rv_media_handle_upload(request()->input('file'), 0, 'your-folder`);
+```
+
+# Get image by size
+
+To get image by size, you can use `get_image_url($url, $size = null, $relative_path = false, $default = null)`.
+
+Ex:
+
+```
+get_image_url($post->image, 'thumb');
+```
+
+If you have registered other size, you can change `thumb` by your size's name.
