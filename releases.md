@@ -2,6 +2,7 @@
 
 # Release Notes
 
+- [Botble 3.6.1](#version_3_6_1)
 - [LaraMag 3.6](#version_3_6)
 - [LaraMag 3.5.1](#version_3_5_1)
 - [LaraMag 3.5](#version_3_5)
@@ -15,6 +16,15 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_3_6_1"></a>
+## Botble 3.6.1
+### 10-08-2019
+
+- Fix bug delete widget.
+- Fix bug search users.
+- Refactor code.
+- Improve performance.
 
 <a name="version_3_6"></a>
 ## LaraMag 3.6

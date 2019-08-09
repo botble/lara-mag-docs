@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 3.6.1](#upgrade-3.6.1)
 - [Upgrade To 3.6](#upgrade-3.6)
 - [Upgrade To 3.5](#upgrade-3.5)
 - [Upgrade To 3.4](#upgrade-3.4)
@@ -11,6 +12,12 @@
 - [Upgrade To 2.0.1](#upgrade-2.0.1)
 - [Upgrade To 2.0](#upgrade-2.0)
 - [Upgrading To 1.1](#upgrade-1.1)
+
+<a name="upgrade-3.6.1"></a>
+## Upgrade to 3.6.1
+- Override folder `platform` from the update source code.
+- Run `composer update` to update vendor packages.
+- Remove folder `public/vendor/core` and run command `php artisan vendor:publish --tag=cms-public --force`
 
 <a name="upgrade-3.6"></a>
 ## Upgrade to 3.6
