@@ -1,7 +1,7 @@
 # Form builder
 
 We're using [kristijanhusak/laravel-form-builder](https://github.com/kristijanhusak/laravel-form-builder) to build form.
-Visit official document for more information [http://kristijanhusak.github.io/laravel-form-builder](http://kristijanhusak.github.io/laravel-form-builder)
+Visit official document for more information [https://kristijanhusak.github.io/laravel-form-builder](https://kristijanhusak.github.io/laravel-form-builder)
 
 Example:
 

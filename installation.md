@@ -61,7 +61,7 @@ Cannot use as `http://localhost/lara-mag/...`.
 
 Please remove `public` in your domain also, you can point your domain to `public` folder
 
-or use `.httaccess` (http://stackoverflow.com/questions/23837933/how-can-i-remove-public-index-php-in-the-url-generated-laravel)
+or use `.httaccess` (https://stackoverflow.com/questions/23837933/how-can-i-remove-public-index-php-in-the-url-generated-laravel)
 
 Follow these steps to see how to config virtual host: [Setup virtual host](/3.5/virtualhost).
 
