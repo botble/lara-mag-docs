@@ -69,3 +69,17 @@ get_image_url($post->image, 'thumb');
 ```
 
 If you have registered other size, you can change `thumb` by your size's name.
+
+# Upload file from a path
+
+You can fake a file upload from a path with `UploadedFile` and upload it using `RvMedia::handleUpload()`
+
+Ex:
+```php
+$folder = \Botble\Media\Models\MediaFolder::create([
+    'name' => 'Example',
+    'slug' => 'example',
+]);
+$fileUpload = new \Illuminate\Http\UploadedFile(database_path('files/example.png'), 'example.png', 'image/png', null, true);
+$image = \RvMedia::handleUpload($fileUpload, $folder->id);
+```
