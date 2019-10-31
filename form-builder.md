@@ -126,3 +126,44 @@ By default, a form will have 2 columns. It's separated by a breaking point. You 
 ```php
 ->setBreakFieldPoint('field_name');
 ```
+
+## Add more columns into existed form
+
+```php
+add_filter(BASE_FILTER_BEFORE_RENDER_FORM, 'add_addition_fields_into_form', 120, 3);
+
+/**
+ * @param \Botble\Base\Forms\FormAbstract $form
+ * @param string $screen
+ */
+function add_addition_fields_into_form($form, $screen, $model)
+{
+    if ($screen == POST_MODULE_SCREEN_NAME) {
+        $form
+            ->add('test', 'text', [
+                'label'      => __('Test Field'),
+                'label_attr' => ['class' => 'control-label'],
+                'attr'       => [
+                    'placeholder' => __('Test'),
+                ],
+            ]);
+
+    }
+}
+
+add_action(BASE_ACTION_AFTER_CREATE_CONTENT, 'save_addition_fields', 120, 3);
+add_action(BASE_ACTION_AFTER_UPDATE_CONTENT, 'save_addition_fields', 120, 3);
+
+/**
+ * @param string $screen
+ * @param Request $request
+ * @param Model $object
+ */
+function save_addition_fields($screen, $request, $object)
+{
+    if ($screen == POST_MODULE_SCREEN_NAME) {
+        $object->test = $request->input('test');
+        $object->save();
+    }
+}
+```

@@ -9,7 +9,7 @@
 **We recommend to use Ampps (https://www.ampps.com) instead of Xampp to create develop environment. With Ampps, you can easy to add/manage virtual domain like lara-mag.local https://www.youtube.com/watch?v=F1CaiR3L9FQ**
 
 - Apache, nginx, or another compatible web server.
-- PHP >= 7.1.3 >> Higher
+- PHP >= 7.2 >> Higher
 - MySQL Database server
 - PDO PHP Extension
 - OpenSSL PHP Extension
@@ -42,6 +42,9 @@
 * Run `php artisan cms:theme:assets:publish lara-mag`
 
 * Run `php artisan storage:link`
+
+Note: If you can't run `php artisan storage:link` (some hosting doesn't support it), you can change config
+in `/config/filesystems.php` like this https://prnt.sc/pn50dc then move all uploaded file from `/storage/app/public` to `/public/storage`.
 
 * Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS
 

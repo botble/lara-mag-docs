@@ -2,7 +2,8 @@
 
 # Release Notes
 
-- [Botble 3.6.1](#version_3_6_1)
+- [LaraMag 4.0](#version_4_0)
+- [LaraMag 3.6.1](#version_3_6_1)
 - [LaraMag 3.6](#version_3_6)
 - [LaraMag 3.5.1](#version_3_5_1)
 - [LaraMag 3.5](#version_3_5)
@@ -16,6 +17,33 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_4_0"></a>
+## Botble 4.0
+### 31-10-2019
+
+- Upgraded to Laravel 6.0. Now this CMS requires PHP >=7.2 (https://laravel.com/docs/6.0#server-requirements)
+
+- Refactor database to improve query performance.
++ **slugs**: renamed column `reference` to `reference_type` and using model class instead of screen name. Ex: `reference_type` is `post` now changed to `Botble\Blog\Models\Post`.
++ **language_meta**: renamed column `lang_meta_content_id` to `reference_id` and `lang_meta_reference` to `reference_type`. Using model class instead of screen name. Ex: `reference_type` is `post` now changed to `Botble\Blog\Models\Post`.
++ **menu_nodes**: renamed column `related_id` to `reference_id` and `type` to `reference_type`.  Using model class instead of screen name. Ex: `reference_type` is `post` now changed to `Botble\Blog\Models\Post`.
++ **meta_boxes**: renamed column `content_id` to `reference_id` and `reference` to `reference`. Using model class instead of screen name. Ex: `reference_type` is `post` now changed to `Botble\Blog\Models\Post`.
+
+- Update meta boxes helpers: Remove screen name in function. (`get_meta_data()`, `get_meta()`, `save_meta_data()`, `delete_meta_data()`)
+Ex:
+```php
+// Before
+function get_meta_data($object->id, $key, $screen, $single = false, $select = ['meta_value'])
+
+// Now
+function get_meta_data($object, $key, $single = false, $select = ['meta_value'])
+```
+
+- All forms now require to setup model. Ex: platform/plugins/blog/src/Forms/PostForm.php:54
+```php
+$this->setupModel(new Post);
+```
 
 <a name="version_3_6_1"></a>
 ## Botble 3.6.1
