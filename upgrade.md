@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 4.0](#upgrade-4.0)
 - [Upgrade To 3.6.1](#upgrade-3.6.1)
 - [Upgrade To 3.6](#upgrade-3.6)
 - [Upgrade To 3.5](#upgrade-3.5)
@@ -12,6 +13,63 @@
 - [Upgrade To 2.0.1](#upgrade-2.0.1)
 - [Upgrade To 2.0](#upgrade-2.0)
 - [Upgrading To 1.1](#upgrade-1.1)
+
+<a name="upgrade-4.0"></a>
+## Upgrade to 4.0
+- Copy your themes and plugins to new source code (v4.0)
+- Run `composer install` to install vendor packages
+- Run `php artisan migrate` to update database.
+- Change in `.env`: `FILESYSTEM_DRIVER=public`
+- Remove `/storage` from image URL in your database. Ex: change `/storage/uploads/abc.jpg` to `uploads/abc.jpg`
+- Update helper functions:
+Ex:
+```php
+// Before
+function get_meta_data($object->id, $key, $screen, $single = false, $select = ['meta_value'])
+
+// Now
+function get_meta_data($object, $key, $single = false, $select = ['meta_value'])
+```
+
+- Add setupModel method into your plugin forms. Ex: platform/plugins/blog/src/Forms/PostForm.php:54
+```php
+$this->setupModel(new Post);
+```
+
+- Change screen's name to model class name in some functions: https://prnt.sc/pqyaiz
++ `Language::registerModule({PLUGIN}_MODULE_SCREEN_NAME);` to `Language::registerModule(\Botble\{Plugin}\Models\{Plugin}::class)`
++ `SeoHelper::registerModule({PLUGIN}_MODULE_SCREEN_NAME);` to `SeoHelper::registerModule(\Botble\{Plugin}\Models\{Plugin}::class)`
++ Change
+```php
+config([
+    'packages.slug.general.supported' => array_merge(config('packages.slug.general.supported'), [{PLUGIN}_MODULE_SCREEN_NAME]),
+]);
+```
+to
+
+```php
+SlugHelper::registerModule(\Botble\{Plugin}\Models\{Plugin}::class);
+```
+
+- Update your plugin's tables:
++ Change `apply_filters(BASE_FILTER_GET_LIST_DATA, $data, {PLUGIN}_MODULE_SCREEN_NAME)` to `apply_filters(BASE_FILTER_GET_LIST_DATA, $data, $this->repository->getModel())`
++ Change
+```php
+$this->applyScopes(apply_filters(BASE_FILTER_TABLE_QUERY, $query, $model, {PLUGIN}_MODULE_SCREEN_NAME));
+```
+to 
+```php
+$this->applyScopes(apply_filters(BASE_FILTER_TABLE_QUERY, $query, $model));
+```
+
++ Change
+```php
+apply_filters(BASE_FILTER_TABLE_BUTTONS, $buttons, {PLUGIN}_MODULE_SCREEN_NAME);
+```
+to
+```php
+apply_filters(BASE_FILTER_TABLE_BUTTONS, $buttons, Post::class);
+```
 
 <a name="upgrade-3.6.1"></a>
 ## Upgrade to 3.6.1

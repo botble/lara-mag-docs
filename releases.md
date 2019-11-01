@@ -35,7 +35,9 @@ Ex:
 ```php
 // Before
 function get_meta_data($object->id, $key, $screen, $single = false, $select = ['meta_value'])
+```
 
+```php
 // Now
 function get_meta_data($object, $key, $single = false, $select = ['meta_value'])
 ```
