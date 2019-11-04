@@ -6,7 +6,7 @@
 <a name="requirement"></a>
 ## Requirement
 
-**We recommend to use Ampps (https://www.ampps.com) instead of Xampp to create develop environment. With Ampps, you can easy to add/manage virtual domain like lara-mag.local https://www.youtube.com/watch?v=F1CaiR3L9FQ**
+**We recommend to use MAMP PRO (https://www.mamp.info/en/) instead of Xampp to create develop environment. With MAMP, you can easy to add/manage virtual domain like lara-mag.local.**
 
 - Apache, nginx, or another compatible web server.
 - PHP >= 7.2 >> Higher
@@ -23,8 +23,7 @@
 - Module Re_write server
 - PHP_CURL Module Enable
 
-
->  {warning} On this project, I use the latest Laravel version (currently 5.8). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
+>  {warning} On this project, I use the latest Laravel version (currently 6.x). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
 
 <a name="installation"></a>
 ## Installation
@@ -39,7 +38,7 @@
 
 * Run `php artisan vendor:publish --tag=cms-public --force`
 
-* Run `php artisan cms:theme:assets:publish lara-mag`
+* Run `php artisan cms:theme:assets:publish`
 
 * Run `php artisan storage:link`
 
@@ -66,7 +65,7 @@ Please remove `public` in your domain also, you can point your domain to `public
 
 or use `.httaccess` (https://stackoverflow.com/questions/23837933/how-can-i-remove-public-index-php-in-the-url-generated-laravel)
 
-Follow these steps to see how to config virtual host: [Setup virtual host](/3.5/virtualhost).
+Follow these steps to see how to config virtual host: [Setup virtual host](/cms/4.0/virtualhost).
 
 Well done! Now, you can login to the dashboard by access to your_domain_site/admin.
 
