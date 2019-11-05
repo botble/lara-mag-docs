@@ -71,6 +71,20 @@ to
 apply_filters(BASE_FILTER_TABLE_BUTTONS, $buttons, Post::class);
 ```
 
+- Update in your plugin's controllers, remove screen name from `BeforeEditContentEvent`:
+Change
+
+```php
+event(new BeforeEditContentEvent({PLUGIN}_MODULE_SCREEN_NAME, $request, $data));
+```
+
+To 
+
+```php
+event(new BeforeEditContentEvent($request, $data));
+```
+
+
 <a name="upgrade-3.6.1"></a>
 ## Upgrade to 3.6.1
 - Override folder `platform` from the update source code.
