@@ -1,7 +1,29 @@
 # Widget
 
+- [Register Widget Area](#register_widget_area)
+- [Display Widget Area](#display_widget_area)
 - [Create Widget](#create_widget)
 - [Structure](#structure)
+
+<a name="register_widget_area"></a>
+## Register Widget Area
+
+Add bellow code into `/platform/themes/your-theme/functions/functions.php`
+
+```php
+register_sidebar([
+    'id'          => 'sidebar_name',
+    'name'        => __('Sidebar Name'),
+    'description' => __('This the description for widget area'),
+]);
+```
+
+<a name="display_widget_area"></a>
+## Display Widget Area
+
+```php
+{!! dynamic_sidebar('sidebar_name') !!}
+```
 
 <a name="create_widget"></a>
 ## Create Widget
