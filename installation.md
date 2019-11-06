@@ -32,11 +32,13 @@
 
 * Create `.env` file from `.env-example` and update your configuration
 
-* Run `php artisan migrate` to create database structure
+* Run `php artisan migrate` to create database structure with no sample data or import default database from `database.sql` if you need sample data.
 
 * Run `php artisan cms:user:create` to create admin user
 
 * Run `php artisan vendor:publish --tag=cms-public --force`
+
+* Run `php artisan cms:theme:activate lara-mag`
 
 * Run `php artisan cms:theme:assets:publish`
 
