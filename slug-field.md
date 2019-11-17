@@ -7,17 +7,18 @@ The table to use `slug` must be have column `name`. It's used to generate slug c
 \- Open `/plugins/<your-plugin>/src/Providers/<YourPlugin>ServiceProvider.php`. Add below code to function `boot`
 
 ```php
-config(['packages.slug.general.supported' => array_merge(config('packages.slug.general.supported'), [<PLUGIN>_MODULE_SCREEN_NAME])]);
-config(['packages.slug.general.prefixes.' . <PLUGIN>_MODULE_SCREEN_NAME => 'your-prefix']);
+$this->app->booted(function () {
+   \SlugHelper::registerModule(YourPluginModel::class);
+   \SlugHelper::setPrefix(YourPluginModel::class, 'gallery');
+});
+
 // "your-prefix" is prefix for your slug field. URL will be http://domain.local/your-prefix/slug-here
 ```
 
-\- Add `SlugTrait` to your models to get data when using `$data->slug`.
+\- Add `SlugTrait` to your models to get data when using `$data->slug` and `$data->url`.
 
 ```php
 use \Botble\Slug\Traits\SlugTrait;
-
-protected $screen = <PLUGIN>_MODULE_SCREEN_NAME;
 ```
 
 \- If you're using form builder to generate forms for your plugin, slug field will be added to your form automatically.
@@ -60,11 +61,11 @@ Example for controller method:
 ```php
 public function getBySlug($slug, \Botble\Slug\Repositories\Interfaces\SlugInterface $slugRepository)
 {
-    $slug = $slugRepository->getFirstBy(['key' => $slug, 'reference' => <PLUGIN>_MODULE_SCREEN_NAME]);
+    $slug = $slugRepository->getFirstBy(['key' => $slug, 'reference_type' => YourModel::class]);
     if (!$slug) {
         abort(404);
     }
-    $data = $this->{your-plugin}Repository->getFirstBy(['id' => $slug->reference_id, 'status' => 1]);
+    $data = $this->{yourPlugin}Repository->getFirstBy(['id' => $slug->reference_id, 'status' => 1]);
 
     if (!$data) {
         abort(404);

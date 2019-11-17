@@ -5,7 +5,7 @@
 - Open `/plugins/<your-plugin>/src/Providers/<YourPlugin>ServiceProvider.php`. Add below code to function `boot`
 
 ```php
-\Gallery::registerModule([<YOUR_PLUGIN>_MODULE_SCREEN_NAME]);
+\Gallery::registerModule([YourPluginModel::class]);
 ```
 
 ## Render galleries
