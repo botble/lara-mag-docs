@@ -1,157 +1,88 @@
-# Meta box
+# Shortcode
 
-This concept based on Wordpress functions.
+## Add a shortcode
 
-You can add meta box from `your-theme/functions/functions.php` or in function `boot` of your plugin service provider.
+Using function `add_shortcode`:
 
-## Add a meta box
+```php
+add_shortcode(string $key, string $name, $string description, callable $callback_function)
+```
 
-We need to add an action to hook `BASE_ACTION_META_BOXES`
++ $callback_function: (callable) (Required) Callback function which will run when rendering shortcode. See example bellow.
 
 Example:
 
 ```php
-add_action(BASE_ACTION_META_BOXES, 'callback_function_to_handle_meta_box', 120, 3);
+add_shortcode('my-block', 'My block', 'Custom block for me', 'add_custom_block_shortcode');
 ```
 
-Create callback for above action
+Add callback function for shortcode. Example:
 
 ```php
-/**
-* This is an example callback function, it will add more fields to post create/edit screen.
-*/
-function callback_function_to_handle_meta_box($screen, $context)
-{
-    if (is_plugin_active('blog') && $screen == POST_MODULE_SCREEN_NAME && $context == 'advanced') {
-        add_meta_box('additional_post_fields', __('Addition Information'), 'post_additional_fields', $screen, $context, 'default');
-    }
+function add_custom_block_shortcode() {
+    return 'This is my custom block';
+    // or 
+    return view('view-for-my-block')->render(); 
 }
 ```
 
-** Reference: https://developer.wordpress.org/reference/functions/add_meta_box **
-
-Function: Adds a meta box to one or more screens.
+If you don't want to create more function callback, you can do like this.
 
 ```php
-add_meta_box(
-    string $id, 
-    string $title, 
-    callable $callback, 
-    string $screen = null, 
-    string $context = 'advanced', 
-    string $priority = 'default', 
-    array $callback_args = null
-);
+add_shortcode('my-block', 'My block', 'Custom block for me', function() {
+    return 'This is my custom block';
+    // or 
+    return view('view-for-my-block')->render(); 
+});
 ```
 
-**$id**:
-- (string) (Required) Meta box ID (used in the 'id' attribute for the meta box).
+> {note} You can add this function to your-theme/functions/functions.php or in function `boot` of your plugin service provider. 
 
-**$title**:
-- (string) (Required) Title of the meta box.
+## Display shortcode in a theme
 
-**$callback**:
-- (callable) (Required) Function that fills the box with the desired content. The function should echo its output.
+By default, shortcode just can be shown on <your-theme-path>/views/index.blade.php, page.blade.php and post.blade.php
 
-**$screen**:
-- (string|array|WP_Screen) (Optional) The screen or screens on which to show the box (such as a post type, 'link', or 'comment'). Accepts a single screen ID, WP_Screen object, or array of screen IDs. Default is the current screen.
-- Default value: null
-
-**$context**:
-- (string) (Optional) The context within the screen where the boxes should display. Available contexts vary from screen to screen. Post edit screen contexts include 'normal', 'side', and 'advanced'. Comments screen contexts include 'normal' and 'side'. Menus meta boxes (accordion sections) all use the 'side' context. Global
-- Default value: 'advanced'
-
-**$priority**:
-- (string) (Optional) The priority within the context where the boxes should show ('high', 'low').
-- Default value: 'default'
-
-**$callback_args**:
-- (array) (Optional) Data that should be set as the $args property of the box array (which is the second parameter passed to your callback).
-- Default value: null
-
-Create callback function for add_meta_box function.
-
-Example: 
+You can find this in your-theme/config.php
 
 ```php
-function post_additional_fields()
-{
-    $video_link = null;
-    $args = func_get_args();
-    if (!empty($args[0])) {
-        $video_link = get_meta_data($args[0]->id, 'video_link', $args[1], true);
-    }
-    return Theme::partial('post-fields', compact('video_link'));
-}
+$theme->composer(['index', 'page', 'post'], function(View $view) {
+    $view->withShortcodes();
+});
 ```
 
-You can see `Theme::partial('post-field')` so you need to create view for this function in your-theme/partials/post-fields.blade.php
+So you can add short code to page or post content then shortcode should be displayed on page or post.
 
-```html
-<div class="form-group">
-    <label for="video_link">{{ __('Video') }}</label>
-    {!! Form::text('video_link', $video_link, ['class' => 'form-control', 'id' => 'video_link']) !!}
-</div>
+If you want to show shortcode in other pages, please add them to theme view composer.
+
+Or you can render shortcode by manually. Using function `do_short_code`.
+
+```php
+do_shortcode(string $content)
 ```
 
-> {note} If you don't want to put view in your current theme, you can create that view in your plugin or `resources/views` then chang `Theme::partial('post-field')` to `view('your-view')`
-    
-## Handle save meta box fields
++ **$content**: (string) (Required) Content to search for shortcodes. (string) (Required) The name of the shortcode hook.
 
 Example:
 
 ```php
-add_action(BASE_ACTION_AFTER_CREATE_CONTENT, 'save_addition_post_fields', 230, 3);
-add_action(BASE_ACTION_AFTER_UPDATE_CONTENT, 'save_addition_post_fields', 231, 3);
-
-function save_addition_post_fields($type, $request, $object)
-{
-    if (is_plugin_active('blog') && $type == POST_MODULE_SCREEN_NAME) {
-        save_meta_data($object->id, 'video_link', $request->input('video_link'), $type);
-    }
-}
+{!! do_shortcode('[my-block][/my-block]') !!}
 ```
 
-## Full example code.
+> {warning} If there are no shortcode tags defined, then the content will be returned without any filtering. This might cause issues when plugins are disabled but the shortcode will still show up in the post or content.
 
-** your-theme/functions/functions.php **
+## Generate shortcode
+
+To generate shortcode tag for a shortcode.
 
 ```php
-add_action(BASE_ACTION_META_BOXES, 'add_addition_fields_in_post_screen', 24, 3);
-
-function add_addition_fields_in_post_screen($screen, $context)
-{
-    if (is_plugin_active('blog') && $screen == POST_MODULE_SCREEN_NAME && $context == 'advanced') {
-        add_meta_box('additional_post_fields', __('Addition Information'), 'post_additional_fields', $screen, $context, 'default');
-    }
-}
-
-function post_additional_fields()
-{
-    $video_link = null;
-    $args = func_get_args();
-    if (!empty($args[0])) {
-        $video_link = get_meta_data($args[0]->id, 'video_link', $args[1], true);
-    }
-    return Theme::partial('post-fields', compact('video_link'));
-}
-
-add_action(BASE_ACTION_AFTER_CREATE_CONTENT, 'save_addition_post_fields', 230, 3);
-add_action(BASE_ACTION_AFTER_UPDATE_CONTENT, 'save_addition_post_fields', 231, 3);
-
-function save_addition_post_fields($type, $request, $object)
-{
-    if (is_plugin_active('blog') && $type == POST_MODULE_SCREEN_NAME) {
-        save_meta_data($object->id, 'video_link', $request->input('video_link'), $type);
-    }
-}
+echo generate_shortcode('my-block');
 ```
 
-** your-theme/partials/post-fields.blade.php **
+You can add param 2 to function `generate_shortcode`, it's attributes of shortcode.
 
-```html
-<div class="form-group">
-    <label for="video_link">{{ __('Video') }}</label>
-    {!! Form::text('video_link', $video_link, ['class' => 'form-control', 'id' => 'video_link']) !!}
-</div>
+Example:
+
+```php
+echo generate_shortcode('my-block', ['foo' => 'bar', 'abc' => 'xyz']);
 ```
+

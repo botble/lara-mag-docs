@@ -43,6 +43,8 @@ return [
 ];
 ```
 
+*List permissions are stored in config file. So when you change it, you need to run command "cms:user:rebuild-permissions" to update it into database again*
+
 ### How to use it?
 
 Example: `core/acl/routes/web.php:27`
@@ -93,3 +95,34 @@ if ($flag && !$user->hasPermission($flag)) {
 By default, it will use route name as permission flag to check. If you set `permission` in a route, it'll use this value to check.
 If `permission` is set to `false`, system will not check permission when a user access this route.
 If `permission` is set to `superuser`, just super user can access this route.
+
+### Available methods
+
+#### hasPermission()
+
+How to use: `$user->hasPermisison('posts.edit')` or `\Auth::user()->hasPermisison('posts.edit')`
+
+Example:
+
+```
+    @if (Auth::user()->hasPermisison('posts.edit'))
+        // Show something here
+    @else
+        // You don't have permission to edit a post
+    @endif
+```
+
+#### hasAnyPermissions()
+
+It's same with hasPermission but you can pass an array permissions to check. It will return `true` it has any permission in a list.
+
+
+Example:
+
+```
+    @if (Auth::user()->hasAnyPermisisons(['posts.edit', 'posts.delete']))
+        // Show something here
+    @else
+        // You don't have permission to edit a post
+    @endif
+```

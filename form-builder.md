@@ -54,7 +54,8 @@ If you want to show form field as mandatory field, add `required` class to label
     'label' => __('Field label'),
     'label_attr' => ['class' => 'control-label'],
     'attr' => [
-        'with-short-code' => false,
+        'with-short-code' => false, // if true, it will add a button to select shortcode
+        'without-buttons' => false, // if true, all buttons will be hidden
     ],
 ])
 ```
@@ -79,8 +80,8 @@ If you want to show form field as mandatory field, add `required` class to label
     'label' => __('Field label'),
     'label_attr' => ['class' => 'control-label'],
     'choices' => [
-        ["option1", "Option 1"],
-        ["option2", "Option 2"],
+        ['option1', 'Option 1'],
+        ['option2', 'Option 2'],
     ],
 ])
 ```

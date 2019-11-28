@@ -13,8 +13,6 @@
 
      php artisan cms:plugin:create <plugin name>
 
-> {info} You can see more detail here: https://www.youtube.com/watch?v=8F4wfrS9svs
-
 <a name="activate-plugin"></a>
 ## Activate a plugin
 **- Open CMD or Terminal then run:**
@@ -34,6 +32,7 @@ php artisan cms:plugin:deactivate <plugin name>
 <a name="remove-plugin"></a>
 ## Remove a plugin
 **- Command:**
+**- Command:*
 
 ```bash
 php artisan cms:plugin:remove demo
@@ -48,5 +47,3 @@ When you run this command. It will do:
 + It will be remove `demo` table and its permissions
 
 + Delete folder demo in `/plugins` and delete `/plugins` directory if it's empty
-
-> {info} See video for more detail: [Delete a plugin](https://www.youtube.com/watch?v=jmex2G4eC18)
