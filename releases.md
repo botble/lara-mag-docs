@@ -18,7 +18,7 @@
 - [LaraMag 1.0](#version_1_0)
 
 <a name="version_4_1"></a>
-## Botble 4.1
+## LaraMag 4.1
 ### 01-12-2019
 
 - Fix bug in plugin member.
