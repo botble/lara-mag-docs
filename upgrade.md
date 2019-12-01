@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 4.1](#upgrade-4.1)
 - [Upgrade To 4.0](#upgrade-4.0)
 - [Upgrade To 3.6.1](#upgrade-3.6.1)
 - [Upgrade To 3.6](#upgrade-3.6)
@@ -13,6 +14,27 @@
 - [Upgrade To 2.0.1](#upgrade-2.0.1)
 - [Upgrade To 2.0](#upgrade-2.0)
 - [Upgrading To 1.1](#upgrade-1.1)
+
+<a name="upgrade-4.1"></a>
+## Upgrade to 4.1
+
+- Replace all `config('media.` to `config('core.media.media.`
+- Replace all `trans('media::` to `trans('core/media::`
+- Replace all `views('media::` to `view('core/media::`
+- Replace all `@include('media::` to `@include('core/media::`
+- Replace all `@extends('media::` to `@extends('core/media::`
+
+- Change the way to register media sizes if you add your custom image sizes:
+
+Ex:
+```php
+\RvMedia::addSize('featured', 560, 380);
+```
+
+- Run `composer install` to install vendor packages
+- Run `php artisan migrate` to update database.
+- Remove folder `public/vendor/core` and run command `php artisan vendor:publish --tag=cms-public --force`
+
 
 <a name="upgrade-4.0"></a>
 ## Upgrade to 4.0

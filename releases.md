@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 4.1](#version_4_1)
 - [LaraMag 4.0](#version_4_0)
 - [LaraMag 3.6.1](#version_3_6_1)
 - [LaraMag 3.6](#version_3_6)
@@ -15,6 +16,22 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_4_1"></a>
+## Botble 4.1
+### 01-12-2019
+
+- Fix bug in plugin member.
+- Improve media.
+- Change to use `laravel/tinker` 2.0
+- Change to use `mpociot/laravel-apidoc-generator` 4.0
+- Add command `php artisan cms:plugin:make:crud` (Video tutorial: https://www.youtube.com/watch?v=GAnoZbGHE28)
+- Fix UI
+- Add config for Travis CI
+- Fix mail variables
+- Fix SEO helper, cache issue in media.
+- Add option to disable preview feature (Ex: `\SlugHelper::disablePreview(Post::class)`)
+- Refactor code.
 
 <a name="version_4_0"></a>
 ## LaraMag 4.0
