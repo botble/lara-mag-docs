@@ -24,7 +24,7 @@ please feel free to email via my user page contact form [here](https://codecanyo
 
 Homepage: [https://lara-mag.botble.com](https://lara-mag.botble.com)
 
-Admin Area: [https://cms.botble.com/admin](https://lara-mag.botble.com/admin)
+Admin Area: [https://lara-mag.botble.com/admin](https://lara-mag.botble.com/admin)
 
 Username: `botble`
 

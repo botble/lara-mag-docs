@@ -1,7 +1,5 @@
 # Release Notes
 
-# Release Notes
-
 - [LaraMag 4.0](#version_4_0)
 - [LaraMag 3.6.1](#version_3_6_1)
 - [LaraMag 3.6](#version_3_6)
