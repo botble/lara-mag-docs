@@ -1,4 +1,4 @@
-#Plugin
+# Plugin
 
 - [Create plugin](#create-plugin)
 - [Activate plugin](#activate-plugin)

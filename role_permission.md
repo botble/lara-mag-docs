@@ -1,4 +1,5 @@
-## Roles & permissions
+# Roles & permissions
+
 - Roles are stored in database so you can easy to create many roles if you want.
 - Permissions are codebase, it's defined in configuration.
 
