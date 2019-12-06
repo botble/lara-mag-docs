@@ -1,6 +1,8 @@
-# Change media image sizes
+# Media
 
-## Option 1: Override media config
+## Change media image sizes
+
+### Option 1: Override media config
 Copy `platform/core/media/config/media.php` to `config/media.php` and change the media sizes.
 
 ```php
@@ -18,7 +20,7 @@ return [
 
 ```
 
-## Option 2: Modify it from your theme, media sizes will depend on your theme.
+### Option 2: Modify it from your theme, media sizes will depend on your theme.
 Add to `platform/themes/your-theme/functions/functions.php` or in your plugin service providers.
 
 ```php
@@ -39,7 +41,7 @@ How to use:
     {{ get_object_image($post->image, 'post-small') }}
 ```
 
-# Custom upload
+## Custom upload
 
 You can create your custom upload with `RvMedia` facade.
 
@@ -55,7 +57,7 @@ Or
 rv_media_handle_upload(request()->input('file'), 0, 'your-folder`);
 ```
 
-# Get image by size
+## Get image by size
 
 To get image by size, you can use `get_image_url($url, $size = null, $relative_path = false, $default = null)`.
 
@@ -67,7 +69,7 @@ get_image_url($post->image, 'thumb');
 
 If you have registered other size, you can change `thumb` by your size's name.
 
-# Upload file from a path
+## Upload file from a path
 
 You can fake a file upload from a path with `UploadedFile` and upload it using `RvMedia::handleUpload()`
 

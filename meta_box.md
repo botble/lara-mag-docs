@@ -1,4 +1,4 @@
-# Meta box
+# Meta boxes
 
 This concept based on Wordpress functions.
 

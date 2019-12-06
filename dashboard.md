@@ -1,4 +1,4 @@
-## Dashboard
+# Dashboard
 
 ### Register new dashboard widget
 
