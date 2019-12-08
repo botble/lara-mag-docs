@@ -7,12 +7,12 @@
 ```php
 \Event::listen(\Illuminate\Routing\Events\RouteMatched::class, function () {
     dashboard_menu()->registerItem([
-        'id' => 'cms-plugins-<your-plugin>', // key of menu, it should unique
-        'priority' => 5,
-        'parent_id' => null,
-        'name' => 'Your plugin name', // It should be a translation key. Ex: plugins/test::test.name
-        'icon' => 'fa fa-camera',
-        'url' => route('<plugins>.list'), // route to your plugin list.
+        'id'          => 'cms-plugins-<your-plugin>', // key of menu, it should unique
+        'priority'    => 1,
+        'parent_id'   => null,
+        'name'        => 'Your plugin name', // It should be a translation key. Ex: plugins/test::test.name
+        'icon'        => 'fa fa-camera',
+        'url'         => route('<plugins>.list'), // route to your plugin list.
         'permissions' => ['<plugins>.list'], // permission should same with route name, you can see that flag in Plugin.php
     ]);
 });
@@ -31,7 +31,7 @@
 ```php
 register_post_format([
     'post-format-key' => [
-        'key' => 'post-format-key',
+        'key'  => 'post-format-key',
         'name' => 'Post Format Name',
     ],
 ]);
@@ -114,92 +114,14 @@ Add to `/platform/themes/your-theme/functions/functions.php`
 });
 ```
 
-## How to use simple sliders.
+## How to add new language for admin panel?
 
-### Using shortcode
+Run command `php artisan cms:locale:create <locale>`
 
-With this way, it will use Owl Carousel slider.
+Ex: `php artisan cms:locale:create fr` then open folder `resources/lang/fr` to translate it to French.
 
-```
-{!! do_shortcode('[simple-slider key="slide-key"]') !!}
-```
+## How to remove a language for admin panel?
 
-You also need to make sure the setting for slider is correct. The option "Use default assets" should be "Yes".
+Run command `php artisan cms:locale:remove <locale>`
 
-![Simple Slider](./images/simple-slider.png)
-
-## Using custom slider
-
-This is our default source code for simple slider. If you don't want to use Owl slider, you can modify it.
-
-View: `platform/plugins/simple-slider/resources/views/sliders.blade.php`
-
-```php
-@php $sliders = get_all_simple_sliders(); @endphp
-@if (count($sliders) > 0)
-    <div class="slider-wrap">
-        <span class="slider-control prev"><i class="fa fa-angle-left"></i></span>
-        <span class="slider-control next"><i class="fa fa-angle-right"></i></span>
-        <div class="slider home-slider" data-single="true" data-auto-play="true" data-navigation="false"
-             data-dot="false">
-            @foreach($sliders as $slider)
-                <article class="post post-home-slider">
-                    <div class="post-thumbnail">
-                        <a href="{{ $slider->link }}" class="overlay"></a>
-                        <img src="{{ get_object_image($slider->image) }}" alt="{{ $slider->title }}">
-                    </div>
-                    <header class="entry-header">
-                        <h2 class="entry-title">{{ $slider->title }}</h2>
-                        <span class="apart-address">{{ $slider->description }}</span>
-                    </header>
-                </article>
-            @endforeach
-        </div>
-    </div>
-@endif
-```
-
-JS: `platform/plugins/simple-slider/resources/assets/js/simple-slider.js`
-
-```js
-class SimpleSliderManagement {
-    init() {
-        let slider = $('.slider');
-        slider.each((index, el) => {
-            let single = $(el).data('single');
-            $(el).find('.post').hover(() => {
-                let parent = $(el).parent().find('.slider-control');
-                if (!parent.hasClass('active')) {
-                    parent.addClass('active');
-                }
-
-            }, () => {
-                let parent = $(el).parent().find('.slider-control');
-                if (parent.hasClass('active')) {
-                    parent.removeClass('active');
-                }
-            });
-            $(el).owlCarousel({
-                autoPlay: $(el).data('autoplay'),
-                slideSpeed: 3000,
-                paginationSpeed: 400,
-                singleItem: single
-            });
-
-            $(el).siblings('.next').click(() => {
-                $(el).trigger('owl.next');
-            });
-            $(el).siblings('.prev').click(() => {
-                $(el).trigger('owl.prev');
-            });
-        });
-
-        $('.slider-wrap').fadeIn();
-    }
-}
-
-$(document).ready(() => {
-    new SimpleSliderManagement().init();
-});
-```
-
+Ex: `php artisan cms:locale:remove zh-CN`

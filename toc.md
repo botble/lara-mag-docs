@@ -39,3 +39,4 @@
 - Available plugins
     - [Gallery](plugin-gallery.md)
     - [Language](plugin-language.md)
+    - [Simple sliders](plugin-simple-slider.md)
