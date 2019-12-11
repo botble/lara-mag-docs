@@ -26,7 +26,41 @@
 >  {warning} On this project, I use the latest Laravel version (currently 6.x). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
 
 <a name="installation"></a>
-## Installation
+## Install on hosting
+
+- Upload all files into `public_html`.
+- Create a database and import data from `database.sql` (it's located in source code).
+- Create `.env` from `.env.example` and update your database information
+- Config for media:
+    + If your hosting support SSH, you just need to cd to `public_html` and run command `php artisan storage:link`
+    + If your hosting doesn't support SSH. You have to open file `config/filesystem.php`
+                                           
+       Then change
+       
+       ```php
+       'public' => [
+           'driver' => 'local',
+           'root' => storage_path('app/public'),
+           'url' => env('APP_URL').'/storage',
+           'visibility' => 'public',
+       ],
+       ```
+       
+       to
+       
+       ```php
+       'public' => [
+           'driver' => 'local',
+           'root' => public_path('storage'),
+           'url' => env('APP_URL').'/storage',
+           'visibility' => 'public',
+       ],
+       ```
+      
+       Copy all files from `/storage/app/public` to `public/storage`.
+
+
+## Install locally or in VPS
 
 * Run `composer install` to download vendor packages
 
