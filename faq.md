@@ -1,23 +1,5 @@
 # FAQ
 
-## How to add new admin menu for new plugin?
-
-- Open `/plugins/<your-plugin>/src/Providers/<YourPlugin>ServiceProvider.php`. Add below code to function `boot`
-
-```php
-\Event::listen(\Illuminate\Routing\Events\RouteMatched::class, function () {
-    dashboard_menu()->registerItem([
-        'id'          => 'cms-plugins-<your-plugin>', // key of menu, it should unique
-        'priority'    => 1,
-        'parent_id'   => null,
-        'name'        => 'Your plugin name', // It should be a translation key. Ex: plugins/test::test.name
-        'icon'        => 'fa fa-camera',
-        'url'         => route('<plugins>.list'), // route to your plugin list.
-        'permissions' => ['<plugins>.list'], // permission should same with route name, you can see that flag in Plugin.php
-    ]);
-});
-```
-
 ## How to add new language to admin panel?
 
 - Add your language in /resources/lang directory, copy all files /resources/lang/en and paste to your language folder and translate it to your language.
