@@ -33,6 +33,7 @@
     - [Dashboard Widgets](dashboard-widgets.md)
     - [Dashboard Menu](dashboard-menu.md)
     - [Form builder](form-builder.md)
+    - [SEO helper](seo-helper.md)
     - [Slug field](slug-field.md)
     - [Mail](mail.md)
     - [FAQ](faq.md)
