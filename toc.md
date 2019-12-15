@@ -25,6 +25,7 @@
     
 - Core
     - [Roles & permissions](role_permission.md)
+    - [Commands](commands.md)
     - [Media](media.md)
     - [Filters](filters.md)
     - [Actions](actions.md)
