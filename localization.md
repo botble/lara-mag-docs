@@ -12,6 +12,8 @@ Ex: Create file `resources/lang/es.json`
 }
 ```
 
+Reference: Laravel JSON translation document https://laravel.com/docs/5.7/localization#using-translation-strings-as-keys
+
 ## Translate admin panel
 
 To add new locale for your project, you need to copy `resources/lang/en` to your language. Ex: `resources/lang/es` and 
@@ -22,4 +24,6 @@ If you can run command, you can run `php artisan cms:locale:create <locale>` to 
 To remove a locale, you can delete it in `resources/lang` or run command `php artisan cms:locale:remove <locale>`
 
 >{note} To use commands, you may need to run `composer install` to install `dev-tool` package.
+
+Reference: https://laravel.com/docs/5.7/localization#using-short-keys
 
