@@ -36,6 +36,7 @@
     - [Form builder](form-builder.md)
     - [SEO helper](seo-helper.md)
     - [Slug field](slug-field.md)
+    - [Localization](localization.md)
     - [Mail](mail.md)
     - [FAQ](faq.md)
     
