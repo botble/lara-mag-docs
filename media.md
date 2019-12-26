@@ -4,7 +4,7 @@
 
 ### Image uploaded successful but doesn't display.
 
-Make sure you're did following steps:
+Make sure you have done following steps:
 
 - Run `php artisan storage:link`
 - Make sure `APP_URL` in `.env` is correct.
