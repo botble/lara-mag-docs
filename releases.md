@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.0](#version_5_0)
 - [LaraMag 4.2](#version_4_2)
 - [LaraMag 4.1](#version_4_1)
 - [LaraMag 4.0](#version_4_0)
@@ -17,6 +18,14 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_5_0"></a>
+## Botble 5.0
+### 20-01-2020
+- Change admin theme to make it more awesome.
+- Add license.
+- Update Ckeditor to allow to add image's caption.
+- Fix ACL module.
 
 <a name="version_4_2"></a>
 ## LaraMag 4.2
