@@ -8,7 +8,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-LaraMag is a magazine system using Laravel 6.x
+LaraMag is a magazine system using Laravel 7.x. This is a product based on Botble CMS.
 
 Created: `17/12/2017`
 

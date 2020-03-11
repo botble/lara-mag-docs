@@ -44,9 +44,10 @@
 
 * Go to Admin -> Plugins then activate all plugins
 
-
 * Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS
 
+> {note} If you're a Laravel developer or you want to customize our source code in folder `platform/core` & `platform/packages`, 
+> please delete folder `vendor` then run `composer install` to re-install vendor packages before starting change our source code.
 
 **If you need sample data, you can import it from `database.sql`**
 
