@@ -20,6 +20,18 @@
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
 
+<a name="version_5_2"></a>
+## LaraMag 5.2
+### 12-03-2020
+- Upgrade to Laravel 7.x
+- Improve source code.
+- Add package `js-validation` & `sitemap`
+- Fix context menu in media.
+- Fix bug when changing admin's password.
+- Update translations.
+- Update UI.
+- Refactor code.
+
 <a name="version_5_1"></a>
 ## LaraMag 5.1
 ### 08-02-2020

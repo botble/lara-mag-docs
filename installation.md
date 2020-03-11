@@ -6,13 +6,10 @@
 <a name="requirement"></a>
 ## Requirement
 
-<a name="requirement"></a>
-## Requirement
-
 **We recommend to use MAMP PRO (https://www.mamp.info/en/) instead of Xampp to create develop environment. With MAMP, you can easy to add/manage virtual domain like flex-home.local.**
 
 - Apache, nginx, or another compatible web server.
-- PHP >= 7.2 >> Higher
+- PHP >= 7.2.5 >> Higher
 - MySQL Database server
 - PDO PHP Extension
 - OpenSSL PHP Extension
@@ -47,9 +44,6 @@
 
 * Go to Admin -> Plugins then activate all plugins
 
-
-Note: If you can't run `php artisan storage:link` (some hosting doesn't support it), you can change config
-in `/config/filesystems.php` like this https://prnt.sc/pn50dc then move all uploaded file from `/storage/app/public` to `/public/storage`.
 
 * Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS
 

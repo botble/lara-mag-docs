@@ -9,7 +9,8 @@
     - [Virtual host](virtualhost.md)
     
 - Available plugins
-    - [Analytics](analytics.md)
+    - [Analytics](plugin-analytics.md)
+    - [Contact form](plugin-contact-form.md)
     - [Gallery](plugin-gallery.md)
     - [Language](plugin-language.md)
     - [Simple sliders](plugin-simple-slider.md)
