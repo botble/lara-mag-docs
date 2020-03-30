@@ -1,5 +1,7 @@
 # Release Notes
 
+- [LaraMag 5.3](#version_5_3)
+- [LaraMag 5.2](#version_5_2)
 - [LaraMag 5.1](#version_5_1)
 - [LaraMag 5.0](#version_5_0)
 - [LaraMag 4.2](#version_4_2)
@@ -19,6 +21,16 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_5_3"></a>
+## LaraMag 5.3
+### 29-03-2020
+- Update to the latest Laravel version 7.3
+- Improve source code.
+- Add plugin Translation.
+- Improve plugin language. When add/remove a language, it also adds/removes language files in /resources/lang.
+- Update UI.
+- Refactor code.
 
 <a name="version_5_2"></a>
 ## LaraMag 5.2
