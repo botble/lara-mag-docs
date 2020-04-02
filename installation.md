@@ -23,7 +23,7 @@
 - Module Re_write server
 - PHP_CURL Module Enable
 
->  {warning} On this project, I use the latest Laravel version (currently 6.x). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
+>  {warning} On this project, I use the latest Laravel version (currently 7.x). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
 
 <a name="installation"></a>
 ## Install on hosting
@@ -34,24 +34,34 @@
 
 ## Install locally or in VPS
 
-* Create `.env` file from `.env-example` and update your configuration
+- Create `.env` file from `.env-example` and update your configuration.
 
-* Run `php artisan migrate` to create database structure with no sample data or import default database from `database.sql` if you need sample data.
+- Using sample data: 
+    - Import database from `database.sql`.
+    
+- Don't use sample data:
+    - Run `composer install` to install vendor packages.
+    
+    - Run `php artisan migrate` to create database structure.
 
-* Run `php artisan cms:user:create` to create admin user
+    - Run `php artisan cms:user:create` to create admin user.
+    
+    - Run `php artisan cms:theme:activate lara-mag`
 
-* Run `php artisan cms:theme:activate lara-mag`
+- If you're pulled source code from GIT server:
+    - Run `php artisan vendor:publish --tag=cms-public --force`
+    - Run `php artisan cms:theme:assets:publish`
 
-* Go to Admin -> Plugins then activate all plugins
-
-* Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS
+- Run web locally:
+    - Run `php artisan serve`. Open `http://localhost:8000`, you should see the homepage.
+    - Go to `/admin` to access to admin panel.
+    - If you're using sample data, the default admin account is `botble` - `159357`.
+    - If you don't use sample data, you need to go to Admin -> Plugins then activate all plugins.
 
 > {note} If you're a Laravel developer or you want to customize our source code in folder `platform/core` & `platform/packages`, 
 > please delete folder `vendor` then run `composer install` to re-install vendor packages before starting change our source code.
 
-**If you need sample data, you can import it from `database.sql`**
-
-**LaraMag should run on a virtual host. Create a virtual host like cms.local to run LaraMag. Follow these steps to see how to config virtual host: [Setup virtual host](/lara-mag/3.5/virtualhost).** 
+**LaraMag should run on a virtual host. Create a virtual host like cms.local to run LaraMag. Follow these steps to see how to config virtual host: [Setup virtual host](/lara-mag/master/virtualhost).** 
 
 <a name="note"></a>
 ## Note
@@ -66,7 +76,7 @@ Please remove `public` in your domain also, you can point your domain to `public
 
 or use `.httaccess` (https://stackoverflow.com/questions/23837933/how-can-i-remove-public-index-php-in-the-url-generated-laravel)
 
-Follow these steps to see how to config virtual host: [Setup virtual host](/cms/5.x/virtualhost).
+Follow these steps to see how to config virtual host: [Setup virtual host](/lara-mag/master/virtualhost).
 
 Well done! Now, you can login to the dashboard by access to your_domain_site/admin.
 
