@@ -6,7 +6,6 @@
     - [Upgrade Guide](upgrade.md)
 - Getting Started
     - [Installation](installation.md)
-    - [Virtual host](virtualhost.md)
     
 - Available plugins
     - [Analytics](plugin-analytics.md)
