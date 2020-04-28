@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.4](#version_5_4)
 - [LaraMag 5.3](#version_5_3)
 - [LaraMag 5.2](#version_5_2)
 - [LaraMag 5.1](#version_5_1)
@@ -21,6 +22,23 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_5_4"></a>
+## LaraMag 5.4
+### 01-05-2020
+
+- Update to the latest Laravel version 7.8.
+- Refactor code & optimize performance.
+- Add backup commands:
+    - php artisan cms:backup:create
+    - php artisan cms:backup:restore
+    - php artisan cms:backup:remove
+    - php artisan cms:backup:list
+- Fix image's watermark.
+- Change default avatar, remove Gravatar as default avatar.
+- Fix widget & plugin language.
+- Remove package `davejamesmiller/laravel-breadcrumbs`, build own breadcrumbs.
+- Fix theme options when using `editor` field.
 
 <a name="version_5_3"></a>
 ## LaraMag 5.3

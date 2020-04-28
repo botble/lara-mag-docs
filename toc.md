@@ -11,5 +11,6 @@
     - [Analytics](plugin-analytics.md)
     - [Contact form](plugin-contact-form.md)
     - [Gallery](plugin-gallery.md)
+    - [Backup](plugin-backup.md)
     - [Language](plugin-language.md)
     - [Simple sliders](plugin-simple-slider.md)
