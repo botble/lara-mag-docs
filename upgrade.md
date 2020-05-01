@@ -26,9 +26,9 @@
 
 - Override folder `app`, `config`, `platform`, `resources/lang` from the update source code.
 - Override file `composer.json` `and composer.lock` from the update source code.
-- Run `composer install` to install vendor packages
+- Delete folder `vendor` then run `composer install` to re-install vendor packages
 - Run `php artisan migrate` to update database.
-- Remove folder `public/vendor` and run command `php artisan vendor:publish --tag=cms-public --force`
+- Delete folder `public/vendor` and run command `php artisan vendor:publish --tag=cms-public --force`
 
 <a name="upgrade-5.3"></a>
 ## Upgrade to 5.3
@@ -39,7 +39,7 @@
 - Run `php artisan migrate` to update database.
 - Run `php artisan cms:plugin:activate translation` to activate plugin Translation.
 - Run `php artisan cms:translations:import` to update database.
-- Remove folder `public/vendor` and run command `php artisan vendor:publish --tag=cms-public --force`
+- Delete folder `public/vendor` and run command `php artisan vendor:publish --tag=cms-public --force`
 
 <a name="upgrade-5.2"></a>
 ## Upgrade to 5.2
@@ -48,7 +48,7 @@
 - Override file `composer.json` `and composer.lock` from the update source code.
 - Run `composer install` to install vendor packages
 - Run `php artisan migrate` to update database.
-- Remove folder `public/vendor` and run command `php artisan vendor:publish --tag=cms-public --force`
+- Delete folder `public/vendor` and run command `php artisan vendor:publish --tag=cms-public --force`
 
 <a name="upgrade-5.1"></a>
 ## Upgrade to 5.1
@@ -57,7 +57,7 @@
 - Override file `composer.json` `and composer.lock` from the update source code.
 - Run `composer install` to install vendor packages
 - Run `php artisan migrate` to update database.
-- Remove folder `public/vendor/core` and run command `php artisan vendor:publish --tag=cms-public --force`
+- Delete folder `public/vendor/core` and run command `php artisan vendor:publish --tag=cms-public --force`
 
 <a name="upgrade-5.0"></a>
 ## Upgrade to 5.0
@@ -66,7 +66,7 @@
 - Override file `composer.json` `and composer.lock` from the update source code.
 - Run `composer install` to install vendor packages
 - Run `php artisan migrate` to update database.
-- Remove folder `public/vendor/core` and run command `php artisan vendor:publish --tag=cms-public --force`
+- Delete folder `public/vendor/core` and run command `php artisan vendor:publish --tag=cms-public --force`
 
 <a name="upgrade-4.2"></a>
 ## Upgrade to 4.2
@@ -75,7 +75,7 @@
 - Override file `composer.json` `and composer.lock` from the update source code.
 - Run `composer install` to install vendor packages
 - Run `php artisan migrate` to update database.
-- Remove folder `public/vendor/core` and run command `php artisan vendor:publish --tag=cms-public --force`
+- Delete folder `public/vendor/core` and run command `php artisan vendor:publish --tag=cms-public --force`
 - Remove all function `setModuleName()` in your plugins (if you have).
 
 <a name="upgrade-4.1"></a>
