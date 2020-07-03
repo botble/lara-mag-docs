@@ -24,6 +24,20 @@
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
 
+
+<a name="version_5_6"></a>
+## LaraMag 5.6
+### 03-07-2020
+
+- Update to the latest Laravel version 7.18.
+- Optimize database queries.
+- Add support Recaptcha v3.
+- Improve cookie consent.
+- Fix bugs plugin Language.
+- Add default open graph image.
+- Improve admin UI.
+- Refactor code.
+
 <a name="version_5_5"></a>
 ## LaraMag 5.5
 ### 29-05-2020
