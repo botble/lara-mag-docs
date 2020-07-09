@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.6](#version_5_6)
 - [LaraMag 5.5](#version_5_5)
 - [LaraMag 5.4](#version_5_4)
 - [LaraMag 5.3](#version_5_3)
@@ -23,6 +24,12 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+
+## LaraMag 5.6.1
+### 09-07-2020
+
+- Add support DigitalOcean Spaces
 
 
 <a name="version_5_6"></a>
