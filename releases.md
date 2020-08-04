@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.7](#version_5_7)
 - [LaraMag 5.6](#version_5_6)
 - [LaraMag 5.5](#version_5_5)
 - [LaraMag 5.4](#version_5_4)
@@ -26,10 +27,17 @@
 - [LaraMag 1.0](#version_1_0)
 
 
-## LaraMag 5.6.1
-### 09-07-2020
-
-- Add support DigitalOcean Spaces
+## LaraMag 5.7
+### 05-08-2020
+- Upgrade to the latest Laravel framework version 7.22.
+- Deprecated some media functions: `is_image`, `get_image_url`, `get_object_image`, `rv_media_handle_upload`. 
+  Replacements: `RvMedia::isImage()`, `RvMedia::getImageUrl()`, `RvMedia::handleUpload()`.
+- Add support **Digital Ocean Spaces**.
+- Fix timezone, it doesn't work before.
+- Fix filter posts.
+- Update email settings. Add support **SES**, **Postmark**, **Array**, **Log**.
+- Improve performance & refactor source code.
+- Improve license system, make it works better.
 
 
 <a name="version_5_6"></a>
