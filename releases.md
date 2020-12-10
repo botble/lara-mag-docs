@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.11](#version_5_11)
 - [LaraMag 5.10](#version_5_10)
 - [LaraMag 5.9](#version_5_9)
 - [LaraMag 5.8](#version_5_8)
@@ -28,6 +29,17 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+## LaraMag 5.11
+### Dec 10, 2020
+- Add search box.
+- Improve responsive.
+- Update translations, added missing keys.
+- Update cookie consent.
+- Improve DO Spaces integration.
+- Improve error pages.
+- Fix roles & permissions.
+- Optimize page speed and performance.
 
 ## LaraMag 5.10
 ### Nov 14, 2020
