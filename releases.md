@@ -33,6 +33,7 @@
 
 ## LaraMag 5.12
 ### Jan 19, 2021
+- Add RSS feed plugin. Demo: https://lara-mag.botble.com/feed/posts
 - Update seeders.
 - Update error pages, make it more simple.
 - Improve UI gallery images, update Google fonts & fix cookie consent.

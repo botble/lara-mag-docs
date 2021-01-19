@@ -46,6 +46,8 @@
   - Override folder `public/themes`, `public/vendor`, `bootstrap`, `vendor` from the latest version.
   - Delete all files in `storage/framework/views` and `storage/framework/cache`.
   - Go to Admin -> Translations -> Admin translations then click on `Import group` to update translations.
+
+- Go to Admin -> Plugins and activate plugin RSS Feed.
   
 <a name="version_5_11"></a>
 ## Upgrade to 5.11
