@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.12](#version_5_12)
 - [LaraMag 5.11](#version_5_11)
 - [LaraMag 5.10](#version_5_10)
 - [LaraMag 5.9](#version_5_9)
@@ -29,6 +30,16 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+## LaraMag 5.12
+### Jan 19, 2021
+- Update seeders.
+- Update error pages, make it more simple.
+- Improve UI gallery images, update Google fonts & fix cookie consent.
+- Improve media URL.
+- Improve core & optimize queries.
+- Remove unused CSS/JS libraries.
+- Fix postCSS, upgrade to Laravel Mix 6.0
 
 ## LaraMag 5.11
 ### Dec 10, 2020
