@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.13](#version_5_13)
 - [LaraMag 5.12](#version_5_12)
 - [LaraMag 5.11](#version_5_11)
 - [LaraMag 5.10](#version_5_10)
@@ -30,6 +31,16 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+## LaraMag 5.13
+### Feb 04, 2021
+- Upgraded to Laravel 8.
+- Update JS/CSS assets.
+- Improve admin language settings.
+- Improve permalinks.
+- Fix language plugin.
+- Fix bugs on PHP 8.
+- Refactor code & optimize UI.
 
 ## LaraMag 5.12
 ### Jan 19, 2021
