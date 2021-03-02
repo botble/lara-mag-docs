@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.14](#version_5_14)
 - [LaraMag 5.13](#version_5_13)
 - [LaraMag 5.12](#version_5_12)
 - [LaraMag 5.11](#version_5_11)
@@ -31,6 +32,17 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+## LaraMag 5.14
+### Mar 02, 2021
+- New option to add custom JS in Admin -> Appearance -> Custom JS.
+- Added setting in Admin -> Settings -> General to change login screen backgrounds.
+- Improve dashboard widgets.
+- Improve page SEO meta.
+- Improve Blog API (prevent error when sending wrong params).
+- Improve breadcrumbs.
+- Fix permission issue on Contact plugin.
+- Fix some bugs on PHP 8.
 
 ## LaraMag 5.13
 ### Feb 04, 2021
