@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.15](#version_5_15)
 - [LaraMag 5.14](#version_5_14)
 - [LaraMag 5.13](#version_5_13)
 - [LaraMag 5.12](#version_5_12)
@@ -32,6 +33,15 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+## LaraMag 5.15
+### Apr 07, 2021
+- Add plugin Author & Ads manager.
+- Add option to turn off automatic URL translation into Latin.
+- Add option to force URL & schema.
+- Improve email templates.
+- Fix bug Serialization of 'GdImage' is not allowed.
+- Refactor code & optimize performance.
 
 ## LaraMag 5.14
 ### Mar 02, 2021
