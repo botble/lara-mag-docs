@@ -6,6 +6,7 @@
     - [Upgrade Guide](upgrade.md)
 - Getting Started
     - [Installation](installation.md)
+    - [SSL](ssl.md)
     - [License](license.md)
     
 - Available plugins
