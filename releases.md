@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.16](#version_5_16)
 - [LaraMag 5.15](#version_5_15)
 - [LaraMag 5.14](#version_5_14)
 - [LaraMag 5.13](#version_5_13)
@@ -33,6 +34,16 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+## LaraMag 5.16
+### May 10, 2021
+- Fix error on table Posts when plugin Author activated.
+- Fix change user's password.
+- Remove unused services in Google Client API services to reduce app size.
+- Fix color field.
+- Update theme options & handle errors when saving custom CSS.
+- Optimize queries.
+- Refactor code & improve performance.
 
 ## LaraMag 5.15
 ### Apr 07, 2021
