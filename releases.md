@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.17](#version_5_17)
 - [LaraMag 5.16](#version_5_16)
 - [LaraMag 5.15](#version_5_15)
 - [LaraMag 5.14](#version_5_14)
@@ -34,6 +35,16 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+## LaraMag 5.17
+### Jun 13, 2021
+- Added RTL support for the admin panel.
+- Fix some errors on PHP 8.
+- Fix blog API.
+- Improve media, fix some errors with SVG.
+- Improve UI.
+- Optimize queries.
+- Refactor code & improve performance.
 
 ## LaraMag 5.16
 ### May 10, 2021
