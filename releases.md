@@ -38,7 +38,7 @@
 - [LaraMag 1.0](#version_1_0)
 
 ## LaraMag 5.18
-### Jul 11, 2021
+### Jul 12, 2021
 - Add Wasabi cloud storage support.
 - Allow to config the default placeholder image.
 - Improve media, translations & backup.
