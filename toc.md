@@ -10,9 +10,12 @@
     - [License](license.md)
     
 - Available plugins
-    - [Analytics](plugin-analytics.md)
     - [Contact form](plugin-contact-form.md)
     - [Gallery](plugin-gallery.md)
     - [Backup](plugin-backup.md)
     - [Language](plugin-language.md)
     - [Simple sliders](plugin-simple-slider.md)
+  
+- Usage
+  - [Setup email](usage-email.md)
+  - [Analytics](usage-analytics.md)

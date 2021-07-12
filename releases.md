@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.18](#version_5_18)
 - [LaraMag 5.17](#version_5_17)
 - [LaraMag 5.16](#version_5_16)
 - [LaraMag 5.15](#version_5_15)
@@ -35,6 +36,16 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+## LaraMag 5.18
+### Jul 11, 2021
+- Add Wasabi cloud storage support.
+- Allow to config the default placeholder image.
+- Improve media, translations & backup.
+- Improve UI.
+- Optimize queries.
+- Refactor code & improve performance.
+- Fix some bugs on PHP 8.
 
 ## LaraMag 5.17
 ### Jun 13, 2021
