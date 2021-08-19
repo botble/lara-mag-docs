@@ -85,8 +85,7 @@
   - Override folder `app`, `config`, `platform`, `public/themes`, `public/vendor` and `public/index.php` from the latest version.
   - Update file `composer.json` and `composer.lock` from new source code.
   - Delete folder `/vendor` then run `composer install` to upgrade vendor packages.
-  - Delete folder `public/vendor` and run command `php artisan vendor:publish --tag=cms-public --force`
-  - Delete folder `public/themes` and run command `php artisan cms:theme:assets:publish`
+  - Run `php artisan cms:publish:assets`.
   - Run command `php artisan vendor:publish --tag=cms-lang --force` to update translations.
   - Run `php artisan optimize:clear` to clear cache.
 
