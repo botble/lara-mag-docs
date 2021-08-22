@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 5.20](#upgrade-5.20)
 - [Upgrade To 5.19](#upgrade-5.19)
 - [Upgrade To 5.18](#upgrade-5.18)
 - [Upgrade To 5.17](#upgrade-5.17)
@@ -36,6 +37,24 @@
 - [Upgrade To 2.0](#upgrade-2.0)
 - [Upgrading To 1.1](#upgrade-1.1)
 
+<a name="upgrade-5.20"></a>
+## Upgrade to 5.20
+
+>  {warning} This version requires PHP >= 7.3, make sure your hosting support PHP 7.3 or higher.
+
+- For developers:
+  - Override folder `app`, `config`, `platform`, `public/themes`, `public/vendor` and `public/index.php` from the latest version.
+  - Update file `composer.json` and `composer.lock` from new source code.
+  - Delete folder `/vendor` then run `composer install` to upgrade vendor packages.
+  - Run `php artisan cms:publish:assets`.
+  - Run command `php artisan vendor:publish --tag=cms-lang --force` to update translations.
+  - Run `php artisan optimize:clear` to clear cache.
+
+- For non-developers:
+  - Override folder `app`, `bootstrap`, `config`, `platform`, `vendor`, `public/themes`, `public/vendor` and `public/index.php` from the latest version.
+  - Delete all files in `storage/framework/views` and `storage/framework/cache`.
+  - Go to Admin -> Translations -> Admin translations then click on `Import group` to update translations.
+  - 
 <a name="upgrade-5.19"></a>
 ## Upgrade to 5.19
 

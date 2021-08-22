@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.20](#version_5_20)
 - [LaraMag 5.19](#version_5_19)
 - [LaraMag 5.18](#version_5_18)
 - [LaraMag 5.17](#version_5_17)
@@ -37,6 +38,15 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+## LaraMag 5.20
+### Aug 23, 2021
+- Fix Contact plugin with the new editor.
+- Improve shortcode. Make it easier to modify added shortcodes.
+- Improve editor & clean XSS.
+- Update to the latest Laravel version 8.55.0
+- Improve core.
+- Optimize queries performance.
 
 ## LaraMag 5.19
 ### Jul 27, 2021
