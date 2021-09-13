@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.21](#version_5_21)
 - [LaraMag 5.20](#version_5_20)
 - [LaraMag 5.19](#version_5_19)
 - [LaraMag 5.18](#version_5_18)
@@ -39,6 +40,21 @@
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
 
+<a name="version_5_21"></a>
+## LaraMag 5.21
+### Sep 14, 2021
+- Fix theme migration & issue when activating plugin Language.
+- Fix admin email.
+- Fix cache issue in media.
+- Improve theme custom CSS/JS.
+- Improve plugin Blog & Newsletter.
+- Improve allowed iframe types.
+- Handle TokenMismatchException.
+- Prevent error when missing watermark image.
+- Update to the latest Laravel version 8.60.0
+- Improve core.
+- Optimize queries performance.
+- 
 ## LaraMag 5.20
 ### Aug 23, 2021
 - Fix Contact plugin with the new editor.
