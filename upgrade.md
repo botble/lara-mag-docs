@@ -54,7 +54,7 @@
 - For non-developers:
   - Override folder `app`, `bootstrap`, `database`, `config`, `platform`, `vendor`, `public/themes`, `public/vendor` and `public/index.php` from the latest version.
   - Delete all files in `storage/framework/views` and `storage/framework/cache`.
-  - Go to Admin -> Translations -> Admin translations then click on `Import group` to update translations.
+  - Go to Admin -> Translations -> Other translations then click on `Import group` to update translations.
 <a name="upgrade-5.20"></a>
 ## Upgrade to 5.20
 
@@ -71,7 +71,7 @@
 - For non-developers:
   - Override folder `app`, `bootstrap`, `database`, `config`, `platform`, `vendor`, `public/themes`, `public/vendor` and `public/index.php` from the latest version.
   - Delete all files in `storage/framework/views` and `storage/framework/cache`.
-  - Go to Admin -> Translations -> Admin translations then click on `Import group` to update translations.
+  - Go to Admin -> Translations -> Other translations then click on `Import group` to update translations.
   
 <a name="upgrade-5.19"></a>
 ## Upgrade to 5.19
