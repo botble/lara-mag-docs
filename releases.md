@@ -48,6 +48,7 @@
 - Add system updater. 1-click update to the latest version.
 - Add BunnyCDN cloud storage.
 - Fix bug admin email, login backgrounds.
+- Fix featured posts block on mobile.
 - Update to the latest Laravel version 8.64.0
 - Improve RTL mode.
 - Improve UI & Editors.
