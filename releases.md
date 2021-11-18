@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.23](#version_5_23)
 - [LaraMag 5.22](#version_5_22)
 - [LaraMag 5.21](#version_5_21)
 - [LaraMag 5.20](#version_5_20)
@@ -40,6 +41,16 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_5_23"></a>
+## LaraMag 5.23
+### Nov 18, 2021
+- Option 1 (Auto update): Go to Admin -> System Administration -> System Updater and click "Download & install update".
+
+- Option 2 (Manual update):
+    - Override folder `app`, `database`, `config`, `platform`, `public/themes`, `public/vendor`, `bootstrap`, `vendor`, `composer.json`, `composer.lock` and `public/index.php` from the latest version.
+    - Go to Admin -> Platform Administration -> Cache management then clear all caches.
+    - Go to Admin -> Translations -> Other translations then click on `Import group` to update translations.
 
 <a name="version_5_22"></a>
 ## LaraMag 5.22

@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 5.23](#upgrade-5.23)
 - [Upgrade To 5.22](#upgrade-5.22)
 - [Upgrade To 5.21](#upgrade-5.21)
 - [Upgrade To 5.20](#upgrade-5.20)
@@ -38,6 +39,25 @@
 - [Upgrade To 2.0.1](#upgrade-2.0.1)
 - [Upgrade To 2.0](#upgrade-2.0)
 - [Upgrading To 1.1](#upgrade-1.1)
+
+<a name="upgrade-5.23"></a>
+## Upgrade to 5.23
+- Add featured posts slider.
+- Fix missing post format.
+- Fix UI issue with select2 fields.
+- Fix Admin Bar settings.
+- Fix some small issues when upgrading to Bootstrap 5.
+- Improve multi-language.
+- Improve social login
+- Improve updater, using PclZip if Zip module is not enabled
+- Improve UI.
+- Improve slug package.
+- Improve shortcode.
+- Improve plugin Analytics, view analytics data by daterange.
+- Improve core & UI.
+- Improve RTL mode.
+- Update to the latest Laravel version 8.72.0.
+- Optimize queries performance.
 
 <a name="upgrade-5.22"></a>
 ## Upgrade to 5.22
