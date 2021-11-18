@@ -51,12 +51,12 @@
 - Fix Admin Bar settings.
 - Fix some small issues when upgrading to Bootstrap 5.
 - Improve multi-language.
-- Improve social login
-- Improve updater, using PclZip if Zip module is not enabled
+- Improve social login.
+- Improve updater, using PclZip if Zip module is not enabled.
 - Improve UI.
 - Improve slug package.
 - Improve shortcode.
-- Improve plugin Analytics, view analytics data by daterange.
+- Improve plugin Analytics, view analytics data by date range.
 - Improve core & UI.
 - Improve RTL mode.
 - Update to the latest Laravel version 8.72.0.
