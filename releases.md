@@ -45,12 +45,22 @@
 <a name="version_5_23"></a>
 ## LaraMag 5.23
 ### Nov 18, 2021
-- Option 1 (Auto update): Go to Admin -> System Administration -> System Updater and click "Download & install update".
-
-- Option 2 (Manual update):
-    - Override folder `app`, `database`, `config`, `platform`, `public/themes`, `public/vendor`, `bootstrap`, `vendor`, `composer.json`, `composer.lock` and `public/index.php` from the latest version.
-    - Go to Admin -> Platform Administration -> Cache management then clear all caches.
-    - Go to Admin -> Translations -> Other translations then click on `Import group` to update translations.
+- Add featured posts slider.
+- Fix missing post format.
+- Fix UI issue with select2 fields.
+- Fix Admin Bar settings.
+- Fix some small issues when upgrading to Bootstrap 5.
+- Improve multi-language.
+- Improve social login
+- Improve updater, using PclZip if Zip module is not enabled
+- Improve UI.
+- Improve slug package.
+- Improve shortcode.
+- Improve plugin Analytics, view analytics data by daterange.
+- Improve core & UI.
+- Improve RTL mode.
+- Update to the latest Laravel version 8.72.0.
+- Optimize queries performance.
 
 <a name="version_5_22"></a>
 ## LaraMag 5.22
