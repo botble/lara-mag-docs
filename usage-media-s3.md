@@ -8,4 +8,4 @@ If you need to use S3 for storage, you can configure to use S3 in Admin -> Setti
 
 Check this video:
 
-[![https://www.youtube.com/watch?v=FIvxmmgrHEs](https://img.youtube.com/vi/FIvxmmgrHEs/maxresdefault.jpg)](https://www.youtube.com/watch?v=FIvxmmgrHEs)
+> {video} https://www.youtube.com/watch?v=FIvxmmgrHEs
