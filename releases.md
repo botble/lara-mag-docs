@@ -54,7 +54,6 @@
 - Update AWS S3 settings: add AWS Endpoint.
 - Refactor code.
 
-
 <a name="version_5_23"></a>
 ## LaraMag 5.23
 ### Nov 18, 2021
