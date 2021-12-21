@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.24](#version_5_24)
 - [LaraMag 5.23](#version_5_23)
 - [LaraMag 5.22](#version_5_22)
 - [LaraMag 5.21](#version_5_21)
@@ -41,6 +42,18 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_5_24"></a>
+## LaraMag 5.24
+### Dec 22, 2021
+- Fix saving meta box data.
+- Improve editor & media.
+- Improve multi-language.
+- Improve theme translations.
+- Improve RTL style.
+- Update AWS S3 settings: add AWS Endpoint.
+- Refactor code.
+
 
 <a name="version_5_23"></a>
 ## LaraMag 5.23
