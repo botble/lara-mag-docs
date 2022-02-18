@@ -46,7 +46,7 @@
 
 <a name="version_5_25"></a>
 ## LaraMag 5.25
-### Feb 18, 2021
+### Feb 18, 2022
 - Fix issue with Cloudflare SSL.
 - Fix tree category & social links.
 - Fix duplicate shortcode in CKEditor.
