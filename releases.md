@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.25](#version_5_25)
 - [LaraMag 5.24](#version_5_24)
 - [LaraMag 5.23](#version_5_23)
 - [LaraMag 5.22](#version_5_22)
@@ -42,6 +43,21 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_5_25"></a>
+## LaraMag 5.25
+### Feb 18, 2021
+- Fix issue with Cloudflare SSL.
+- Fix tree category & social links.
+- Fix duplicate shortcode in CKEditor.
+- Fix saving SEO meta tags.
+- Improve license.
+- Improve permalink.
+- Improve dashboard widgets.
+- Improve core.
+- Prevent Method Not Allowed error when use ajax DELETE/PUT.
+- Add schema for post & page.
+- Update AWS S3 settings.
 
 <a name="version_5_24"></a>
 ## LaraMag 5.24
