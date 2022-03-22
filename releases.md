@@ -48,10 +48,10 @@
 <a name="version_5_26"></a>
 ## LaraMag 5.26
 ### Mar 22, 2022
-- Improve editor.
 - Fix language advanced plugin.
 - Fix plugin activation.
 - Fix menu contains &amp;
+- Improve editor.
 - Refactor code & improve queries.
 - Update Laravel framework to 8.83.5.
 
