@@ -48,7 +48,7 @@
 <a name="version_5_26"></a>
 ## LaraMag 5.26
 ### Mar 22, 2022
-- Improve Editor.
+- Improve editor.
 - Fix language advanced plugin.
 - Fix plugin activation.
 - Fix menu contains &amp;
