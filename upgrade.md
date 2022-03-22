@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 5.26](#upgrade-5.26)
 - [Upgrade To 5.25](#upgrade-5.25)
 - [Upgrade To 5.24](#upgrade-5.24)
 - [Upgrade To 5.23](#upgrade-5.23)
@@ -42,6 +43,16 @@
 - [Upgrade To 2.0](#upgrade-2.0)
 - [Upgrading To 1.1](#upgrade-1.1)
 
+<a name="upgrade-5.26"></a>
+## Upgrade to 5.26
+- Option 1 (Auto update): Go to Admin -> System Administration -> System Updater and click "Download & install update".
+
+- Option 2 (Manual update):
+  - Override folder `app`, `database`, `config`, `platform`, `public/themes`, `public/vendor`, `bootstrap`, `vendor`, `composer.json`, `composer.lock` and `public/index.php` from the latest version.
+  - Go to Admin -> Platform Administration -> Cache management then clear all caches.
+  - Go to Admin -> Plugins: deactivate plugin `Blog`, `Language`, `Language Advanced` then activate them again.
+  - Go to Admin -> Translations -> Other translations then click on `Import group` to update translations.
+  
 <a name="upgrade-5.25"></a>
 ## Upgrade to 5.25
 - Option 1 (Auto update): Go to Admin -> System Administration -> System Updater and click "Download & install update".
@@ -51,7 +62,7 @@
   - Go to Admin -> Platform Administration -> Cache management then clear all caches.
   - Go to Admin -> Plugins: deactivate plugin `Blog`, `Language`, `Language Advanced` then activate them again.
   - Go to Admin -> Translations -> Other translations then click on `Import group` to update translations.
-  - 
+
 <a name="upgrade-5.24"></a>
 ## Upgrade to 5.24
 - Option 1 (Auto update): Go to Admin -> System Administration -> System Updater and click "Download & install update".

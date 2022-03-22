@@ -1,5 +1,6 @@
 # Release Notes
 
+- [LaraMag 5.26](#version_5_26)
 - [LaraMag 5.25](#version_5_25)
 - [LaraMag 5.24](#version_5_24)
 - [LaraMag 5.23](#version_5_23)
@@ -43,6 +44,16 @@
 - [LaraMag 2.0](#version_2_0)
 - [LaraMag 1.1](#version_1_1)
 - [LaraMag 1.0](#version_1_0)
+
+<a name="version_5_26"></a>
+## LaraMag 5.26
+### Mar 22, 2022
+- Improve Editor.
+- Fix language advanced plugin.
+- Fix plugin activation.
+- Fix menu contains &amp;
+- Refactor code & improve queries.
+- Update Laravel framework to 8.83.5.
 
 <a name="version_5_25"></a>
 ## LaraMag 5.25
