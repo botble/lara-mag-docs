@@ -6,7 +6,7 @@
 
 With this way, it will use Owl Carousel slider.
 
-```
+```blade
 {!! do_shortcode('[simple-slider key="slide-key"]') !!}
 ```
 
@@ -20,7 +20,7 @@ This is our default source code for simple slider. If you don't want to use Owl 
 
 View: `platform/plugins/simple-slider/resources/views/sliders.blade.php`
 
-```php
+```blade
 @php $sliders = get_all_simple_sliders(); @endphp
 @if (count($sliders) > 0)
     <div class="slider-wrap">
