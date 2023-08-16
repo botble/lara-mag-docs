@@ -19,24 +19,18 @@ export default [
         ],
     },
     {
-        text: 'Available plugins',
-        items: [
-            { text: 'Contact form', link: '/lara-mag/plugin-contact-form' },
-            { text: 'Gallery', link: '/lara-mag/plugin-gallery' },
-            { text: 'Backup', link: '/lara-mag/plugin-backup' },
-            { text: 'Language', link: '/lara-mag/plugin-language' },
-            { text: 'Simple sliders', link: '/lara-mag/plugin-simple-slider' },
-        ],
-    },
-    {
         text: 'Usage',
         items: [
-            { text: 'Setup email', link: '/lara-mag/usage-email' },
+            { text: 'Rename theme', link: '/lara-mag/theme-rename' },
+            { text: 'Custom CSS/JS', link: '/lara-mag/usage-custom-css-js' },
+            { text: 'Translation', link: '/lara-mag/usage-translation' },
+            { text: 'Multi-language', link: '/lara-mag/usage-multi-language' },
+            { text: 'Google Analytics', link: '/lara-mag/usage-analytics' },
             { text: 'Media - Setup Amazon S3', link: '/lara-mag/usage-media-s3' },
             { text: 'Media - Setup BunnyCDN', link: '/lara-mag/usage-media-bunnycdn' },
             { text: 'Media - Setup Wasabi', link: '/lara-mag/usage-media-wasabi' },
-            { text: 'Analytics', link: '/lara-mag/usage-analytics' },
-            { text: 'Rename theme', link: '/lara-mag/theme-rename' },
+            { text: 'Setup email', link: '/lara-mag/usage-email' },
+            { text: 'Backup', link: '/lara-mag/plugin-backup' },
         ],
     },
 ] satisfies DefaultTheme.SidebarItem[];
