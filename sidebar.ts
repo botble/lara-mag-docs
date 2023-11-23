@@ -21,7 +21,6 @@ export default [
     {
         text: 'Usage',
         items: [
-            { text: 'Rename theme', link: '/lara-mag/theme-rename' },
             { text: 'Custom CSS/JS', link: '/lara-mag/usage-custom-css-js' },
             { text: 'Translation', link: '/lara-mag/usage-translation' },
             { text: 'Multi-language', link: '/lara-mag/usage-multi-language' },
@@ -32,4 +31,10 @@ export default [
             { text: 'Setup email', link: '/lara-mag/usage-email' },
         ],
     },
+    {
+        text: 'Development',
+        items: [
+            { text: 'Rename theme', link: '/jobzilla/theme-rename' },
+        ]
+    }
 ] satisfies DefaultTheme.SidebarItem[];
