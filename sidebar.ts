@@ -29,6 +29,7 @@ export default [
             { text: 'Media - Setup BunnyCDN', link: '/lara-mag/usage-media-bunnycdn' },
             { text: 'Media - Setup Wasabi', link: '/lara-mag/usage-media-wasabi' },
             { text: 'Setup email', link: '/lara-mag/usage-email' },
+            { text: 'Setup cronjob', link: '/lara-mag/cronjob' },
         ],
     },
     {
