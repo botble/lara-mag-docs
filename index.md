@@ -26,7 +26,7 @@ Password: `159357`
 
 ## Botble Team
 
-Visit us at [https://botble.com](botble.com)
+Visit us at [botble.com](https://botble.com)
 
 ## Why choose us
 
@@ -98,4 +98,4 @@ Plugin management
 
 ## Botble Team
 
-Visit us at [https://botble.com](botble.com)
+Visit us at [botble.com](https://botble.com)
