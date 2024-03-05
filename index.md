@@ -20,9 +20,9 @@ Homepage: [https://lara-mag.botble.com](https://lara-mag.botble.com)
 
 Admin Area: [https://lara-mag.botble.com/admin](https://lara-mag.botble.com/admin)
 
-Username: `botble`
+Username: `admin`
 
-Password: `159357`
+Password: `12345678`
 
 ## Botble Team
 
