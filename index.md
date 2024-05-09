@@ -24,10 +24,6 @@ Username: `admin`
 
 Password: `12345678`
 
-## Botble Team
-
-Visit us at [https://botble.com](botble.com)
-
 ## Why choose us
 
 Coding Standard: All code follow coding standards PSR-2 and best practices. Validated
