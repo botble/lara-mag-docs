@@ -98,4 +98,4 @@ Plugin management
 
 ## Botble Team
 
-Visit us at [https://botble.com](botble.com)
+Visit us at [https://botble.com](https://botble.com)
